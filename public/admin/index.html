@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Crecimiento — Admin del blog</title>
+    <link rel="cms-config-url" type="text/yaml" href="/admin/config.yml" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // Botón: [button:Texto](url)
+      CMS.registerEditorComponent({
+        id: "button",
+        label: "Botón (link a form o URL)",
+        fields: [
+          { name: "label", label: "Texto del botón", widget: "string" },
+          { name: "url", label: "URL de destino", widget: "string" },
+        ],
+        pattern: /^\[button:(.+?)\]\((.+?)\)$/,
+        fromBlock: function (match) {
+          return { label: match[1], url: match[2] };
+        },
+        toBlock: function (data) {
+          return "[button:" + data.label + "](" + data.url + ")";
+        },
+        toPreview: function (data) {
+          return (
+            '<a style="display:inline-block;background:#13239A;color:#fff;padding:12px 28px;border-radius:9999px;font-weight:600;text-decoration:none">' +
+            data.label +
+            "</a>"
+          );
+        },
+      });
+
+      // Video: [video](url de YouTube)
+      CMS.registerEditorComponent({
+        id: "video",
+        label: "Video (YouTube)",
+        fields: [
+          { name: "url", label: "Link del video", widget: "string" },
+        ],
+        pattern: /^\[video\]\((.+?)\)$/,
+        fromBlock: function (match) {
+          return { url: match[1] };
+        },
+        toBlock: function (data) {
+          return "[video](" + data.url + ")";
+        },
+        toPreview: function (data) {
+          return '<p style="background:#eee;padding:40px;text-align:center;border-radius:4px">🎬 Video: ' + data.url + "</p>";
+        },
+      });
+    </script>
+  </body>
+</html>

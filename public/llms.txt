@@ -1,0 +1,17 @@
+# Crecimiento
+
+> Crecimiento is a foundation driving Argentina's tech ecosystem to position the country as a global hub for innovation. It works from three pillars: Aleph Hub, a permanent space in Buenos Aires that hosts the ecosystem's daily activity; a system of programs that supports startups and founders from hackathon to acceleration; and the bridge between public and private sectors for a regulatory framework that matches the ecosystem's pace.
+
+Key facts (as of 2026): more than 15,000 people went through its programs, 1,000+ startups in the ecosystem, 200+ startups accelerated, 220+ programs run with 100+ partners. Founded in 2024 in Buenos Aires, Argentina.
+
+## Pages
+
+- [Home](https://crecimiento.build/): Why Argentina, the three fronts of work (cowork, programs, regulatory efforts), programs and initiatives (Aleph pop-up cities, Aleph Hackathon, Regulation Day, Acceleration Program, Startup World Cup, Technical Summits, Halketon, Buenos Aires Ethereum Community Hub), spin-offs (Lucero Ventures, Anden, Founder School) and global allies.
+- [About Us](https://crecimiento.build/about): The history of the movement, season by season, from the first pop-up city in August 2024 to the present.
+- [Blog](https://crecimiento.build/blog): Notes and stories from the ecosystem.
+- [Media Kit](https://crecimiento.build/media-kit): Official boilerplate, key facts, downloadable logos, brand colors and usage guidelines.
+
+## Contact
+
+- Press and partners: comms@crecimiento.build
+- Newsletter, calendar and social links are available in the site footer.

@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: crecimientoar/crecimiento-web # org/repo en GitHub
+  branch: main
+  base_url: https://crecimiento.build # dominio del sitio (donde viven /api/oauth y /api/callback)
+  auth_endpoint: api/oauth
+
+# Modo local: permite probar el panel en localhost sin GitHub (correr `npx decap-server`).
+# Solo aplica cuando entrás desde localhost; en el dominio real usa GitHub igual.
+local_backend: true
+
+locale: es
+site_url: https://CAMBIAR.vercel.app
+media_folder: public/images/blog
+public_folder: /images/blog
+
+collections:
+  - name: blog
+    label: Notas del blog
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Título, widget: string }
+      - { name: lang, label: Idioma, widget: select, options: [{ label: "Español", value: "es" }, { label: "English", value: "en" }], default: "es" }
+      - { name: date, label: Fecha, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+      - { name: excerpt, label: "Resumen (para la card del índice)", widget: text }
+      - { name: tag, label: "Categoría", widget: select, options: ["Program", "Recap", "Editorial"], required: false }
+      - { name: cover, label: "Imagen de portada (opcional)", widget: image, required: false }
+      - { name: draft, label: "Borrador (no se publica)", widget: boolean, default: true }
+      - { name: body, label: Cuerpo, widget: markdown }

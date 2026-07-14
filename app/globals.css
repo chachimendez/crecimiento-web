@@ -1,26 +1,308 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foundation-black: #1F1F1F;
+  --visionary-white: #FAFAFA;
+  --seedling-white: #FFFDE7;
+  --innovation-gold: #FFE908;
+  --potential-yellow: #FDF07E;
+  --ambition-blue: #13239A;
+  --development-blue: #2C509B;
+  --expansion-blue: #6D8EBB;
+  --transition-gray: #A5B4BE;
+  --adaptable-gray: #E1DFE0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--visionary-white);
+  color: var(--foundation-black);
+  font-family: var(--font-geist-sans), "Helvetica Neue", Arial, sans-serif;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Allies marquees: row 1 drifts left, row 2 drifts right */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+/* Con w-max el recorrido es la tira completa (~4.800px): duraciones acordes */
+.marquee-left {
+  animation: marquee-left 70s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 75s linear infinite;
+}
+
+@media (max-width: 767px) {
+  .marquee-left { animation-duration: 55s; }
+  .marquee-right { animation-duration: 60s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-left, .marquee-right { animation: none; }
+}
+
+/* Mobile glow drift animation */
+@keyframes glow-drift {
+  0%   { transform: translate(10vw, 20vh); }
+  33%  { transform: translate(60vw, 10vh); }
+  66%  { transform: translate(40vw, 60vh); }
+  100% { transform: translate(10vw, 20vh); }
+}
+
+.glow-drift {
+  animation: glow-drift 20s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-drift { animation: none; transform: translate(10vw, 20vh); }
+}
+
+/* Blog post content (rendered from Markdown) */
+.post-content {
+  color: var(--foundation-black);
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.post-content h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 2.2rem 0 0.8rem;
+}
+
+.post-content h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 1.8rem 0 0.6rem;
+}
+
+.post-content p {
+  margin: 1rem 0;
+}
+
+.post-content a {
+  color: var(--ambition-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.post-content strong {
+  font-weight: 600;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 1rem 0;
+  padding-left: 1.4rem;
+}
+
+.post-content ul {
+  list-style: disc;
+}
+
+.post-content ol {
+  list-style: decimal;
+}
+
+.post-content li {
+  margin: 0.4rem 0;
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--ambition-blue);
+  padding-left: 1.2rem;
+  margin: 1.6rem 0;
+  font-style: italic;
+}
+
+.post-content img {
+  border-radius: 4px;
+  margin: 1.6rem 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--adaptable-gray);
+  margin: 2.5rem 0;
+}
+
+.post-content .post-button {
+  display: inline-block;
+  background-color: var(--ambition-blue);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 9999px;
+  margin: 0.6rem 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.post-content .post-button:hover {
+  transform: scale(1.04);
+  opacity: 0.92;
+}
+
+.post-content .post-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 1.6rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.post-content .post-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Hero: sun slow rotation */
+@keyframes sun-spin {
+  to { transform: rotate(360deg); }
+}
+
+.sun-spin {
+  animation: sun-spin 120s linear infinite;
+}
+
+/* Hero: entrance */
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.rise-in {
+  animation: rise-in 0.9s ease-out both;
+}
+
+/* Scroll reveal: content rises in when it enters the viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.from-left {
+  transform: translateX(-28px);
+}
+
+.reveal.from-right {
+  transform: translateX(28px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Hero: scroll cue float */
+@keyframes cta-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(5px); }
+}
+
+.cta-float {
+  animation: cta-float 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sun-spin, .rise-in, .cta-float { animation: none; }
+}
+
+/* Argentina dot map */
+.dot-map circle {
+  fill: var(--foundation-black);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Desktop: cascada punto por punto (894 animaciones, solo donde rinde) */
+@media (min-width: 768px) {
+  .dot-map circle {
+    opacity: 0;
+    transform: scale(0);
+  }
+  .dot-map.in-view circle {
+    animation: dot-in 0.45s ease-out forwards;
+  }
+  /* After the cascade, dots settle: entry animation released */
+  .dot-map.settled circle {
+    animation: none;
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile: el mapa entra entero con un fade (una sola animacion) */
+@media (max-width: 767px) {
+  .dot-map {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+  }
+  .dot-map.in-view {
+    opacity: 1;
+  }
+}
+
+/* City lights: one dot at a time inflates and deflates (barato, va en todos lados) */
+.dot-map.settled circle.lit {
+  animation: dot-pulse 1.5s ease-in-out;
+}
+
+@keyframes dot-pulse {
+  0%   { transform: scale(1);   fill: var(--foundation-black); }
+  50%  { transform: scale(2.6); fill: var(--innovation-gold); }
+  100% { transform: scale(1);   fill: var(--foundation-black); }
+}
+
+@keyframes dot-in {
+  from { opacity: 0; transform: scale(0); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dot-map circle {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+}
+
+.footer-link {
+  color: var(--visionary-white);
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: var(--innovation-gold);
 }
