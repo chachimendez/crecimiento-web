@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: crecimientoar/crecimiento-web # org/repo en GitHub
+  repo: chachimendez/crecimiento-web # usuario/repo en GitHub
   branch: main
   base_url: https://crecimiento.build # dominio del sitio (donde viven /api/oauth y /api/callback)
   auth_endpoint: api/oauth
