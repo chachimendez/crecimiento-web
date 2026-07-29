@@ -1,8 +1,9 @@
 ---
-title: "Founder School"
+title: Founder School
 lang: en
-date: 2026-07-16
-excerpt: "The training program founded by Laura González: free, global, and with more than 280 founders trained since 2025."
+date: 2024-12-14
+excerpt: "The training program founded by Laura González: free, global, and with
+  more than 280 founders trained since 2025."
 tag: Program
 cover: /images/Programs/founder-school-card.jpg
 draft: false
