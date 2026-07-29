@@ -1,8 +1,9 @@
 ---
 title: "Aleph March '25: la tercera pop-up city (marzo 2025)"
 lang: es
-date: 2026-07-18
-excerpt: "Más de 3.000 personas y 141 speakers en el Aleph Hub: Rayuela con 49 startups, el primer AI Day y la tercera edición del Aleph Hackathon."
+date: 2025-03-05
+excerpt: "Más de 3.000 personas y 141 speakers en el Aleph Hub: Rayuela con 49
+  startups, el primer AI Day y la tercera edición del Aleph Hackathon."
 tag: Recap
 cover: /images/blog/aleph-march-25-cover.png
 draft: false
