@@ -1,8 +1,9 @@
 ---
 title: "Aleph Hackathon: the first edition (August 2024)"
 lang: en
-date: 2026-07-11
-excerpt: "More than 300 hackers from 20 countries, nearly 40 hours of development and 55 projects submitted. This was the first Aleph Hackathon."
+date: 2024-09-12
+excerpt: More than 300 hackers from 20 countries, nearly 40 hours of development
+  and 55 projects submitted. This was the first Aleph Hackathon.
 tag: Recap
 cover: /images/blog/aleph-hackathon-2024-cover.png
 draft: false
