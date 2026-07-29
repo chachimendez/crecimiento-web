@@ -1,7 +1,7 @@
 ---
 title: "Aleph Hackathon de Verano: the second edition (December 2024)"
 lang: en
-date: 2025-01-07
+date: 2024-12-12
 excerpt: 280 builders from 30 countries, a hybrid format for the first time, and
   more than 70 thousand dollars in prizes alongside Optimism, Zama and ZKsync.
 tag: Recap
