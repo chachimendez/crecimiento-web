@@ -1,8 +1,10 @@
 ---
-title: "Why Argentina"
+title: Why Argentina
 lang: en
-date: 2026-07-06
-excerpt: "The country that exports talent to the world's best teams is the same one where millions adopted crypto out of necessity. That combination is our thesis."
+date: 2024-07-23
+excerpt: The country that exports talent to the world's best teams is the same
+  one where millions adopted crypto out of necessity. That combination is our
+  thesis.
 tag: Editorial
 cover: /images/blog/why-argentina-cover.png
 draft: false
