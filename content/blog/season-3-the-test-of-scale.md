@@ -1,8 +1,10 @@
 ---
 title: "Season 3: the test of scale"
 lang: en
-date: 2026-07-17
-excerpt: "From January 13 to March 28, 2025: the launch of the Crecimiento Support Program, Founder School's first cohort, and Aleph March '25 with more than 3,000 people."
+date: 2025-01-13
+excerpt: "From January 13 to March 28, 2025: the launch of the Crecimiento
+  Support Program, Founder School's first cohort, and Aleph March '25 with more
+  than 3,000 people."
 tag: Editorial
 cover: /images/blog/season-3-cover.png
 draft: false
