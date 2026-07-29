@@ -1,7 +1,7 @@
 ---
 title: "Season 1: Crecimiento is born"
 lang: en
-date: 2024-08-05
+date: 2024-07-29
 excerpt: From a question between two founders in February 2024 to a 550-person
   movement with its own pop-up city. This is how Crecimiento began.
 tag: Editorial
