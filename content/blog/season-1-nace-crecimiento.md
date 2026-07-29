@@ -1,8 +1,9 @@
 ---
 title: "Season 1: nace Crecimiento"
 lang: es
-date: 2026-07-08
-excerpt: "De una pregunta entre dos founders en febrero de 2024 a un movimiento de 550 personas con una pop-up city propia. Así empezó Crecimiento."
+date: 2024-08-05
+excerpt: De una pregunta entre dos founders en febrero de 2024 a un movimiento
+  de 550 personas con una pop-up city propia. Así empezó Crecimiento.
 tag: Editorial
 cover: /images/blog/season-1-cover.png
 draft: false
