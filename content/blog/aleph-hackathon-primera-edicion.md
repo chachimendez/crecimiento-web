@@ -1,8 +1,9 @@
 ---
 title: "Aleph Hackathon: la primera edición (agosto 2024)"
 lang: es
-date: 2026-07-11
-excerpt: "Más de 300 hackers de 20 países, casi 40 horas de desarrollo y 55 proyectos presentados. Así fue el primer Aleph Hackathon."
+date: 2024-09-12
+excerpt: Más de 300 hackers de 20 países, casi 40 horas de desarrollo y 55
+  proyectos presentados. Así fue el primer Aleph Hackathon.
 tag: Recap
 cover: /images/blog/aleph-hackathon-2024-cover.png
 draft: false
