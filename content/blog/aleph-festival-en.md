@@ -1,7 +1,7 @@
 ---
 title: "Aleph Festival: the fourth pop-up city (August to November 2025)"
 lang: en
-date: 2025-12-10
+date: 2025-08-25
 excerpt: "Three months of pop-up city, from August 25 to November 22, 2025: the
   frame for Crecimiento's Builder Funnel in the final stretch towards Devconnect
   Buenos Aires."
