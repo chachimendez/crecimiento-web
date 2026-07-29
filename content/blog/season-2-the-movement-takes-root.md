@@ -1,8 +1,10 @@
 ---
 title: "Season 2: the movement takes root"
 lang: en
-date: 2026-07-12
-excerpt: "Founder School, Aleph Hub turned into the crypto heart of Latin America, and a year-end closing with Vitalik Buterin. The season Crecimiento became a structure."
+date: 2024-10-01
+excerpt: Founder School, Aleph Hub turned into the crypto heart of Latin
+  America, and a year-end closing with Vitalik Buterin. The season Crecimiento
+  became a structure.
 tag: Editorial
 cover: /images/blog/season-2-cover.png
 draft: false
