@@ -1,8 +1,9 @@
 ---
-title: "Why Tech"
+title: Why Tech
 lang: en
-date: 2026-07-07
-excerpt: "No other activity has generated so much prosperity in so little time. For Argentina, technology is the development strategy."
+date: 2024-07-24
+excerpt: No other activity has generated so much prosperity in so little time.
+  For Argentina, technology is the development strategy.
 tag: Editorial
 cover: /images/blog/why-tech-cover.png
 draft: false
