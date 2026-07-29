@@ -1,8 +1,10 @@
 ---
 title: "Season 2: el movimiento echa raíces"
 lang: es
-date: 2026-07-12
-excerpt: "Founder School, el Aleph Hub convertido en el corazón cripto de Latinoamérica y un cierre de año con Vitalik Buterin. La season en que Crecimiento se volvió estructura."
+date: 2024-10-01
+excerpt: Founder School, el Aleph Hub convertido en el corazón cripto de
+  Latinoamérica y un cierre de año con Vitalik Buterin. La season en que
+  Crecimiento se volvió estructura.
 tag: Editorial
 cover: /images/blog/season-2-cover.png
 draft: false
