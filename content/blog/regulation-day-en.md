@@ -1,7 +1,7 @@
 ---
 title: Regulation Day
 lang: en
-date: 2024-08-19
+date: 2024-08-22
 excerpt: "Crecimiento's flagship regulatory conference: five editions and more
   than 300 speakers building bridges between the public sector and the
   ecosystem."
