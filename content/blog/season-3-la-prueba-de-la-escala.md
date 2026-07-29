@@ -1,8 +1,10 @@
 ---
 title: "Season 3: la prueba de la escala"
 lang: es
-date: 2026-07-17
-excerpt: "Del 13 de enero al 28 de marzo de 2025: el lanzamiento del Crecimiento Support Program, la primera cohorte de Founder School y Aleph March '25 con más de 3.000 personas."
+date: 2025-01-13
+excerpt: "Del 13 de enero al 28 de marzo de 2025: el lanzamiento del Crecimiento
+  Support Program, la primera cohorte de Founder School y Aleph March '25 con
+  más de 3.000 personas."
 tag: Editorial
 cover: /images/blog/season-3-cover.png
 draft: false
