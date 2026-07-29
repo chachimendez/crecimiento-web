@@ -1,8 +1,10 @@
 ---
 title: "Season 4: Bring Argentina Onchain"
 lang: en
-date: 2026-07-21
-excerpt: "From April to December 2025, the run-up to Devconnect: Aleph Festival, Latam's largest hackathon, two summits and one message for the whole ecosystem: this is your opportunity."
+date: 2025-03-31
+excerpt: "From April to December 2025, the run-up to Devconnect: Aleph Festival,
+  Latam's largest hackathon, two summits and one message for the whole
+  ecosystem: this is your opportunity."
 tag: Editorial
 cover: /images/blog/season-4-cover.png
 draft: false
