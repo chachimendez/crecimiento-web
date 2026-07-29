@@ -1,7 +1,7 @@
 ---
 title: "Aleph, Ciudad de Crecimiento: the first pop-up city (August 2024)"
 lang: en
-date: 2024-09-03
+date: 2024-08-05
 excerpt: Four weeks, more than 3,000 attendees and 32 startups pitching at the
   closing Demo Day. This was the country's first pop-up city.
 tag: Recap
