@@ -1,8 +1,9 @@
 ---
 title: "Aleph de Verano: the second pop-up city (December 2024)"
 lang: en
-date: 2026-07-13
-excerpt: "Two weeks to close the year: more than 1,500 participants, a hybrid hackathon, 100 global speakers and a visit from Vitalik Buterin."
+date: 2025-02-03
+excerpt: "Two weeks to close the year: more than 1,500 participants, a hybrid
+  hackathon, 100 global speakers and a visit from Vitalik Buterin."
 tag: Recap
 cover: /images/blog/aleph-de-verano-cover.png
 draft: false
