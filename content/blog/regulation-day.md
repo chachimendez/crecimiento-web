@@ -1,7 +1,7 @@
 ---
 title: Regulation Day
 lang: es
-date: 2024-08-19
+date: 2024-08-22
 excerpt: "La conferencia regulatoria insignia de Crecimiento: cinco ediciones y
   más de 300 speakers construyendo puentes entre el sector público y el
   ecosistema."
