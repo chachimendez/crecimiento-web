@@ -1,8 +1,10 @@
 ---
 title: "Crecimiento y Zonas Digitales: Key Clarifications"
 lang: es
-date: 2026-07-30
-excerpt: "Qué son las Zonas Económicas Especiales Digitales, cómo funcionan, y los hechos sobre la empresa independiente que se está incubando para construir su infraestructura digital."
+date: 2025-10-30
+excerpt: Qué son las Zonas Económicas Especiales Digitales, cómo funcionan, y
+  los hechos sobre la empresa independiente que se está incubando para construir
+  su infraestructura digital.
 tag: Editorial
 cover: /images/blog/digital-zones-cover.png
 draft: false
