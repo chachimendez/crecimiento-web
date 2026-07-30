@@ -1,5 +1,5 @@
 ---
-title: "LATAM Digital Assets Conf: what's coming"
+title: LATAM Digital Assets Conf
 lang: en
 date: 2026-07-01
 excerpt: On August 20 and 21, Buenos Aires gathers the banks, fintechs,
