@@ -1,7 +1,7 @@
 ---
 title: "Aleph Hackathon March '26: the fifth edition (March 2026)"
 lang: en
-date: 2026-04-06
+date: 2026-03-20
 excerpt: "More than 800 participants, 142 projects and 12 chapters across five
   countries, with four verticals for the first time: crypto, artificial
   intelligence, biotech and robotics."
