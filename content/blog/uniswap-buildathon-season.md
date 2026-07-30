@@ -1,7 +1,7 @@
 ---
 title: "Uniswap Foundation DeFi Track: Buildathon Season"
 lang: es
-date: 2025-09-29
+date: 2025-09-30
 excerpt: "20 startups, 18 sesiones de mentoría y un recorrido que terminó en el
   escenario principal de Devconnect: el track co-creado con la Uniswap
   Foundation dentro de la Buildathon Season."
