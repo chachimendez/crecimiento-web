@@ -1,8 +1,10 @@
 ---
-title: "Regarding the Recent Accusations"
+title: Regarding the Recent Accusations
 lang: en
-date: 2026-07-31
-excerpt: "A direct response to a number of false statements mischaracterizing our work: verified facts about the Foundation, the ecosystem and our regulatory proposals."
+date: 2025-11-03
+excerpt: "A direct response to a number of false statements mischaracterizing
+  our work: verified facts about the Foundation, the ecosystem and our
+  regulatory proposals."
 tag: Editorial
 cover: /images/blog/recent-accusations-cover.png
 draft: false
