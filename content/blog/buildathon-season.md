@@ -1,8 +1,10 @@
 ---
-title: "Buildathon Season"
+title: Buildathon Season
 lang: es
-date: 2026-07-27
-excerpt: "Seis semanas de programas para founders dentro del Aleph Festival: 36 startups seleccionadas, más de 50 horas de contenido y dos tracks insignia junto a Uniswap Foundation y Lisk."
+date: 2025-09-15
+excerpt: "Seis semanas de programas para founders dentro del Aleph Festival: 36
+  startups seleccionadas, más de 50 horas de contenido y dos tracks insignia
+  junto a Uniswap Foundation y Lisk."
 tag: Program
 cover: /images/blog/buildathon-season-cover.png
 draft: false
