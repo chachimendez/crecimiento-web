@@ -1,8 +1,10 @@
 ---
-title: "Builder Funnel"
+title: Builder Funnel
 lang: en
-date: 2026-08-05
-excerpt: "The renewed 2026 pathway supporting teams from the earliest idea to global projection: Aleph Hackathon, Acceleration Season and Startup World Cup."
+date: 2025-08-26
+excerpt: "The renewed 2026 pathway supporting teams from the earliest idea to
+  global projection: Aleph Hackathon, Acceleration Season and Startup World
+  Cup."
 tag: Program
 cover: /images/blog/builder-funnel-cover.png
 draft: false
