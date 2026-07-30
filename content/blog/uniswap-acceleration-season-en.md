@@ -1,8 +1,10 @@
 ---
-title: "Uniswap Foundation Acceleration Season (2026)"
+title: Uniswap Foundation Acceleration Season (2026)
 lang: en
-date: 2026-08-09
-excerpt: "Six weeks of online acceleration alongside the Uniswap Foundation: 14 startups from 26 countries, 12 teams shipping on Uniswap rails and a live Demo Day before investors."
+date: 2026-04-20
+excerpt: "Six weeks of online acceleration alongside the Uniswap Foundation: 14
+  startups from 26 countries, 12 teams shipping on Uniswap rails and a live Demo
+  Day before investors."
 tag: Recap
 cover: /images/blog/uniswap-acceleration-cover.png
 draft: false
