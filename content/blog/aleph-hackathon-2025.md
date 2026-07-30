@@ -1,7 +1,7 @@
 ---
 title: "Aleph Hackathon 2025: la cuarta edición (agosto 2025)"
 lang: es
-date: 2025-09-04
+date: 2025-08-29
 excerpt: "1.300 builders, 320 proyectos y 25 chapters en simultáneo: la edición
   que hizo del Aleph Hackathon el más grande de la historia de Latinoamérica."
 tag: Recap
