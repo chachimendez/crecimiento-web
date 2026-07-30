@@ -1,8 +1,10 @@
 ---
 title: "Crecimiento & Digital Zones: Key Clarifications"
 lang: en
-date: 2026-07-30
-excerpt: "What Digital Special Economic Zones are, how they work, and the facts about the independent company being incubated to build digital infrastructure for them."
+date: 2025-10-30
+excerpt: What Digital Special Economic Zones are, how they work, and the facts
+  about the independent company being incubated to build digital infrastructure
+  for them.
 tag: Editorial
 cover: /images/blog/digital-zones-cover.png
 draft: false
