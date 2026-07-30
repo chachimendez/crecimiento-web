@@ -1,8 +1,10 @@
 ---
 title: "Halketon: el hackathon de impacto social (junio 2026)"
 lang: es
-date: 2026-08-07
-excerpt: "12 horas, más de 90 participantes y 18 ONGs argentinas: la primera edición del hackathon de impacto social de Crecimiento, con cuatro herramientas ganadoras nacidas de problemas reales."
+date: 2026-06-06
+excerpt: "12 horas, más de 90 participantes y 18 ONGs argentinas: la primera
+  edición del hackathon de impacto social de Crecimiento, con cuatro
+  herramientas ganadoras nacidas de problemas reales."
 tag: Recap
 cover: /images/blog/halketon-cover.jpg
 draft: false
