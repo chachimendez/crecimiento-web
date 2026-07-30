@@ -1,5 +1,5 @@
 ---
-title: "LATAM Digital Assets Conf: lo que se viene"
+title: LATAM Digital Assets Conf
 lang: es
 date: 2026-07-01
 excerpt: El 20 y 21 de agosto, Buenos Aires reúne a los bancos, fintechs,
