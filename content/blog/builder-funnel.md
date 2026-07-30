@@ -1,8 +1,10 @@
 ---
-title: "Builder Funnel"
+title: Builder Funnel
 lang: es
-date: 2026-08-05
-excerpt: "El recorrido renovado de 2026 para acompañar a los equipos desde la primera idea hasta la proyección global: Aleph Hackathon, Acceleration Season y Startup World Cup."
+date: 2025-08-26
+excerpt: "El recorrido renovado de 2026 para acompañar a los equipos desde la
+  primera idea hasta la proyección global: Aleph Hackathon, Acceleration Season
+  y Startup World Cup."
 tag: Program
 cover: /images/blog/builder-funnel-cover.png
 draft: false
