@@ -1,8 +1,10 @@
 ---
-title: "Fintech Summit"
+title: Fintech Summit
 lang: es
-date: 2026-07-26
-excerpt: "Las finanzas tradicionales y el ecosistema cripto en una misma sala: más de 30 especialistas debatieron sobre open finance, stablecoins, pagos transfronterizos, seguridad e inteligencia artificial."
+date: 2025-09-12
+excerpt: "Las finanzas tradicionales y el ecosistema cripto en una misma sala:
+  más de 30 especialistas debatieron sobre open finance, stablecoins, pagos
+  transfronterizos, seguridad e inteligencia artificial."
 tag: Program
 cover: /images/blog/fintech-summit-cover.png
 draft: false

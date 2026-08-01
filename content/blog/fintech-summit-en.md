@@ -1,8 +1,10 @@
 ---
-title: "Fintech Summit"
+title: Fintech Summit
 lang: en
-date: 2026-07-26
-excerpt: "Traditional finance and the crypto ecosystem in one room: more than 30 specialists debated open finance, stablecoins, cross-border payments, security and artificial intelligence."
+date: 2025-09-12
+excerpt: "Traditional finance and the crypto ecosystem in one room: more than 30
+  specialists debated open finance, stablecoins, cross-border payments, security
+  and artificial intelligence."
 tag: Program
 cover: /images/blog/fintech-summit-cover.png
 draft: false

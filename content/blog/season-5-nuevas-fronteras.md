@@ -1,8 +1,11 @@
 ---
 title: "Season 5: nuevas fronteras"
 lang: es
-date: 2026-08-02
-excerpt: "La season en curso: el método que funcionó para cripto se expande a la inteligencia artificial, la biotech y la frontier tech, con el primer Ethereum Community Hub oficial de Latam y el lanzamiento de la LATAM Digital Assets Conf."
+date: 2026-02-02
+excerpt: "La season en curso: el método que funcionó para cripto se expande a la
+  inteligencia artificial, la biotech y la frontier tech, con el primer Ethereum
+  Community Hub oficial de Latam y el lanzamiento de la LATAM Digital Assets
+  Conf."
 tag: Editorial
 cover: /images/blog/season-5-cover.png
 draft: false

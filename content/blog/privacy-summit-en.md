@@ -1,8 +1,10 @@
 ---
-title: "Privacy Summit"
+title: Privacy Summit
 lang: en
-date: 2026-07-23
-excerpt: "A full day dedicated to the technologies building a more private internet: online technical workshops and talks at the Aleph Hub on privacy in money, identity and governance."
+date: 2025-08-01
+excerpt: "A full day dedicated to the technologies building a more private
+  internet: online technical workshops and talks at the Aleph Hub on privacy in
+  money, identity and governance."
 tag: Program
 cover: /images/blog/privacy-summit-cover.png
 draft: false

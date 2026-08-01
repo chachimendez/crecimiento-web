@@ -1,8 +1,10 @@
 ---
-title: "Sobre las acusaciones recientes"
+title: Sobre las acusaciones recientes
 lang: es
-date: 2026-07-31
-excerpt: "Una respuesta directa a una serie de declaraciones falsas que tergiversan nuestro trabajo: los hechos verificados sobre la fundación, el ecosistema y nuestras propuestas regulatorias."
+date: 2025-11-03
+excerpt: "Una respuesta directa a una serie de declaraciones falsas que
+  tergiversan nuestro trabajo: los hechos verificados sobre la fundación, el
+  ecosistema y nuestras propuestas regulatorias."
 tag: Editorial
 cover: /images/blog/recent-accusations-cover.png
 draft: false

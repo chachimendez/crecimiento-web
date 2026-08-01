@@ -1,8 +1,10 @@
 ---
-title: "Crecimiento Startup Club"
+title: Crecimiento Startup Club
 lang: es
-date: 2026-07-22
-excerpt: "La membresía de largo plazo para founders de Web3, inteligencia artificial y frontier tech: 150 startups, directorio oficial, mentoría y un lugar en el Aleph Hub durante todo 2025."
+date: 2025-06-11
+excerpt: "La membresía de largo plazo para founders de Web3, inteligencia
+  artificial y frontier tech: 150 startups, directorio oficial, mentoría y un
+  lugar en el Aleph Hub durante todo 2025."
 tag: Program
 cover: /images/blog/startup-club-cover.png
 draft: false

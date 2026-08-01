@@ -1,8 +1,10 @@
 ---
 title: "Rayuela: the startup program of Aleph March '25"
 lang: en
-date: 2026-07-20
-excerpt: "Accelerator-level, equity-free mentorship: 49 startups selected from 88 applications, six weeks of programming and a Demo Day with BuFi, Ensuro and Bondi Finance as winners."
+date: 2025-02-17
+excerpt: "Accelerator-level, equity-free mentorship: 49 startups selected from
+  88 applications, six weeks of programming and a Demo Day with BuFi, Ensuro and
+  Bondi Finance as winners."
 tag: Program
 cover: /images/blog/rayuela-cover.jpg
 draft: false

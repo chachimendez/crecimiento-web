@@ -1,8 +1,10 @@
 ---
-title: "Crecimiento Startup Club"
+title: Crecimiento Startup Club
 lang: en
-date: 2026-07-22
-excerpt: "The long-term membership for Web3, AI and frontier tech founders: 150 startups, an official directory, mentorship and a place at the Aleph Hub throughout 2025."
+date: 2025-06-11
+excerpt: "The long-term membership for Web3, AI and frontier tech founders: 150
+  startups, an official directory, mentorship and a place at the Aleph Hub
+  throughout 2025."
 tag: Program
 cover: /images/blog/startup-club-cover.png
 draft: false

@@ -1,8 +1,9 @@
 ---
-title: "Por qué apostar por lo tech"
+title: Por qué apostar por lo tech
 lang: es
-date: 2026-07-07
-excerpt: "Ninguna otra actividad generó tanta prosperidad en tan poco tiempo. Para Argentina, la tecnología es la estrategia de desarrollo."
+date: 2024-07-24
+excerpt: Ninguna otra actividad generó tanta prosperidad en tan poco tiempo.
+  Para Argentina, la tecnología es la estrategia de desarrollo.
 tag: Editorial
 cover: /images/blog/por-que-tech-cover.png
 draft: false

@@ -1,8 +1,10 @@
 ---
 title: "Aleph Hackathon March '25: la tercera edición (marzo 2025)"
 lang: es
-date: 2026-07-19
-excerpt: "Más de 260 participantes en formato híbrido, 61 proyectos presentados y más de 40 mil dólares en premios junto a World, ZKsync, Mantle, Stellar y Polkadot."
+date: 2025-03-21
+excerpt: Más de 260 participantes en formato híbrido, 61 proyectos presentados y
+  más de 40 mil dólares en premios junto a World, ZKsync, Mantle, Stellar y
+  Polkadot.
 tag: Recap
 cover: /images/blog/hackathon-march-25-cover.png
 draft: false

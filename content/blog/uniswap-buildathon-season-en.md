@@ -1,8 +1,10 @@
 ---
 title: "Uniswap Foundation DeFi Track: Buildathon Season"
 lang: en
-date: 2026-07-28
-excerpt: "20 startups, 18 mentoring sessions and a journey that ended on Devconnect's main stage: the track co-created with the Uniswap Foundation within the Buildathon Season."
+date: 2025-09-30
+excerpt: "20 startups, 18 mentoring sessions and a journey that ended on
+  Devconnect's main stage: the track co-created with the Uniswap Foundation
+  within the Buildathon Season."
 tag: Recap
 cover: /images/blog/uniswap-buildathon-cover.png
 draft: false

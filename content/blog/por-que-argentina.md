@@ -1,8 +1,10 @@
 ---
-title: "Por qué Argentina"
+title: Por qué Argentina
 lang: es
-date: 2026-07-06
-excerpt: "El país que exporta talento a los mejores equipos del mundo es el mismo donde millones adoptaron cripto por necesidad. Esa combinación es nuestra tesis."
+date: 2024-07-23
+excerpt: El país que exporta talento a los mejores equipos del mundo es el mismo
+  donde millones adoptaron cripto por necesidad. Esa combinación es nuestra
+  tesis.
 tag: Editorial
 cover: /images/blog/por-que-argentina-cover.png
 draft: false

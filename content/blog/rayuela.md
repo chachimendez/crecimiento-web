@@ -1,8 +1,10 @@
 ---
 title: "Rayuela: el programa de startups de Aleph March '25"
 lang: es
-date: 2026-07-20
-excerpt: "Mentoría de nivel aceleradora y sin equity: 49 startups seleccionadas entre 88 postulaciones, seis semanas de programa y un Demo Day con BuFi, Ensuro y Bondi Finance como ganadoras."
+date: 2025-02-17
+excerpt: "Mentoría de nivel aceleradora y sin equity: 49 startups seleccionadas
+  entre 88 postulaciones, seis semanas de programa y un Demo Day con BuFi,
+  Ensuro y Bondi Finance como ganadoras."
 tag: Program
 cover: /images/blog/rayuela-cover.jpg
 draft: false

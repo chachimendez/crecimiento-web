@@ -1,8 +1,10 @@
 ---
-title: "Regulation Day"
+title: Regulation Day
 lang: es
-date: 2026-07-12
-excerpt: "La conferencia regulatoria insignia de Crecimiento: cinco ediciones y más de 300 speakers construyendo puentes entre el sector público y el ecosistema."
+date: 2024-08-22
+excerpt: "La conferencia regulatoria insignia de Crecimiento: cinco ediciones y
+  más de 300 speakers construyendo puentes entre el sector público y el
+  ecosistema."
 tag: Program
 cover: /images/blog/regulation-day-cover.jpg
 draft: false

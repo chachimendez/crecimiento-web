@@ -1,8 +1,10 @@
 ---
 title: "Aleph Hackathon March '26: la quinta edición (marzo 2026)"
 lang: es
-date: 2026-08-04
-excerpt: "Más de 800 participantes, 142 proyectos y 12 chapters en cinco países, con cuatro verticales por primera vez: cripto, inteligencia artificial, biotecnología y robótica."
+date: 2026-03-20
+excerpt: "Más de 800 participantes, 142 proyectos y 12 chapters en cinco países,
+  con cuatro verticales por primera vez: cripto, inteligencia artificial,
+  biotecnología y robótica."
 tag: Recap
 cover: /images/blog/hackathon-march-26-cover.png
 draft: false

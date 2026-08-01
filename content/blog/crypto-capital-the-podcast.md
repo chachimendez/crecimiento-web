@@ -1,8 +1,9 @@
 ---
 title: "Crypto Capital: Crecimiento's podcast"
 lang: en
-date: 2026-07-15
-excerpt: "Three episodes recorded live during Aleph de Verano: Vitalik Buterin, Juan Benet and Eric Hill on the future of the ecosystem."
+date: 2024-12-23
+excerpt: "Three episodes recorded live during Aleph de Verano: Vitalik Buterin,
+  Juan Benet and Eric Hill on the future of the ecosystem."
 tag: Program
 cover: /images/blog/crypto-capital-cover.jpg
 draft: false

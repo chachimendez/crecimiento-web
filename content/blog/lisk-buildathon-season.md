@@ -1,8 +1,10 @@
 ---
 title: "Lisk Founders Track: Buildathon Season"
 lang: es
-date: 2026-07-29
-excerpt: "16 startups de Latinoamérica, África, Asia y Europa, cinco Founders Wednesday y una residencia en Edge City Patagonia: el track co-organizado con Lisk dentro de la Buildathon Season."
+date: 2025-09-29
+excerpt: "16 startups de Latinoamérica, África, Asia y Europa, cinco Founders
+  Wednesday y una residencia en Edge City Patagonia: el track co-organizado con
+  Lisk dentro de la Buildathon Season."
 tag: Recap
 cover: /images/blog/lisk-buildathon-cover.png
 draft: false

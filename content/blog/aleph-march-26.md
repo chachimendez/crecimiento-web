@@ -1,8 +1,10 @@
 ---
 title: "Aleph March '26: la quinta pop-up city (marzo 2026)"
 lang: es
-date: 2026-08-03
-excerpt: "Más de 3.000 personas en cuatro semanas temáticas que miraron más allá de cripto: inteligencia artificial, biotecnología, robótica y quantum, una Institutional Week y el inicio de un nuevo Builder Funnel."
+date: 2026-03-03
+excerpt: "Más de 3.000 personas en cuatro semanas temáticas que miraron más allá
+  de cripto: inteligencia artificial, biotecnología, robótica y quantum, una
+  Institutional Week y el inicio de un nuevo Builder Funnel."
 tag: Recap
 cover: /images/blog/aleph-march-26-cover.png
 draft: false

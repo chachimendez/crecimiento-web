@@ -1,8 +1,10 @@
 ---
-title: "Regulation Day"
+title: Regulation Day
 lang: en
-date: 2026-07-12
-excerpt: "Crecimiento's flagship regulatory conference: five editions and more than 300 speakers building bridges between the public sector and the ecosystem."
+date: 2024-08-22
+excerpt: "Crecimiento's flagship regulatory conference: five editions and more
+  than 300 speakers building bridges between the public sector and the
+  ecosystem."
 tag: Program
 cover: /images/blog/regulation-day-cover.jpg
 draft: false

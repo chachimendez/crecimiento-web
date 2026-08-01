@@ -1,8 +1,10 @@
 ---
 title: "Halketon: the social impact hackathon (June 2026)"
 lang: en
-date: 2026-08-07
-excerpt: "12 hours, more than 90 participants and 18 Argentine NGOs: the first edition of Crecimiento's social impact hackathon, with four winning tools born from real problems."
+date: 2026-06-06
+excerpt: "12 hours, more than 90 participants and 18 Argentine NGOs: the first
+  edition of Crecimiento's social impact hackathon, with four winning tools born
+  from real problems."
 tag: Recap
 cover: /images/blog/halketon-cover.jpg
 draft: false

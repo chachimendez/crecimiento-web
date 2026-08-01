@@ -1,8 +1,9 @@
 ---
 title: "Aleph: la pop-up city de Crecimiento"
 lang: es
-date: 2026-07-09
-excerpt: "Un mes, una sede, todo el ecosistema conviviendo y construyendo. Cinco ediciones y más de 10.000 participantes del evento insignia de Crecimiento."
+date: 2024-07-31
+excerpt: Un mes, una sede, todo el ecosistema conviviendo y construyendo. Cinco
+  ediciones y más de 10.000 participantes del evento insignia de Crecimiento.
 tag: Program
 cover: /images/blog/aleph-pop-up-city-portada.png
 draft: false

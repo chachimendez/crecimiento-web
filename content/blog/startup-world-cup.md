@@ -1,8 +1,10 @@
 ---
 title: "Startup World Cup: primera edición (noviembre 2025)"
 lang: es
-date: 2026-08-01
-excerpt: "219 startups de más de 40 países, tres etapas de competencia y una Gran Final en el escenario principal de Devconnect ante un jurado de 10 VCs globales: Peanut campeón."
+date: 2025-11-15
+excerpt: "219 startups de más de 40 países, tres etapas de competencia y una
+  Gran Final en el escenario principal de Devconnect ante un jurado de 10 VCs
+  globales: Peanut campeón."
 tag: Recap
 cover: /images/blog/swc-cover.png
 draft: false

@@ -1,8 +1,10 @@
 ---
-title: "Buenos Aires Ethereum Community Hub"
+title: Buenos Aires Ethereum Community Hub
 lang: en
-date: 2026-08-06
-excerpt: "The Aleph Hub was selected to host Latin America's first official Ethereum Community Hub, backed by the Ethereum Foundation's Ethereum Everywhere team."
+date: 2026-03-26
+excerpt: The Aleph Hub was selected to host Latin America's first official
+  Ethereum Community Hub, backed by the Ethereum Foundation's Ethereum
+  Everywhere team.
 tag: Program
 cover: /images/blog/eth-community-hub-cover.png
 draft: false

@@ -1,8 +1,10 @@
 ---
-title: "LATAM Digital Assets Conf: what's coming"
+title: LATAM Digital Assets Conf
 lang: en
-date: 2026-08-08
-excerpt: "On August 20 and 21, Buenos Aires gathers the banks, fintechs, regulators and investors taking the region's finance onchain. Registration is now open."
+date: 2026-07-01
+excerpt: On August 20 and 21, Buenos Aires gathers the banks, fintechs,
+  regulators and investors taking the region's finance onchain. Registration is
+  now open.
 tag: Program
 cover: /images/blog/ldac-cover.jpg
 draft: false

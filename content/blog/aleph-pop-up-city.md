@@ -1,8 +1,10 @@
 ---
 title: "Aleph: Crecimiento's pop-up city"
 lang: en
-date: 2026-07-09
-excerpt: "One month, one venue, the whole ecosystem living and building together. Five editions and more than 10,000 participants of Crecimiento's flagship event."
+date: 2024-07-31
+excerpt: One month, one venue, the whole ecosystem living and building together.
+  Five editions and more than 10,000 participants of Crecimiento's flagship
+  event.
 tag: Program
 cover: /images/blog/aleph-pop-up-city-portada.png
 draft: false
