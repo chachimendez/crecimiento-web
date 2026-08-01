@@ -36,7 +36,7 @@ export default function BlogPostContent({
           </h1>
 
           {post.cover && (
-            <div className="relative aspect-[2/1] w-full mt-10 overflow-hidden rounded-[4px]">
+            <div className="relative aspect-video w-full mt-10 overflow-hidden rounded-[4px]">
               <Image
                 src={post.cover}
                 alt={post.title}

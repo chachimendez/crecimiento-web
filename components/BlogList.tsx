@@ -114,7 +114,7 @@ export default function BlogList({ posts, t }: { posts: Item[]; t: Strings }) {
               }}
             >
               {post.cover && (
-                <div className="relative aspect-[3/2] w-full">
+                <div className="relative aspect-video w-full">
                   <Image
                     src={post.cover}
                     alt={post.title}
