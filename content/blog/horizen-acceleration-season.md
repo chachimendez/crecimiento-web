@@ -4,7 +4,7 @@ lang: es
 date: 2026-08-05
 excerpt: "Crecimiento y Horizen lanzan un programa online de seis semanas para startups listas para construir sobre Vela, el confidential coprocessor de Horizen: de la primera integración a un producto con usuarios reales detrás. Las aplicaciones cierran el 24 de agosto."
 tag: Program
-cover: /images/blog/horizen-acceleration-cover.jpg
+cover: /images/blog/horizen-acceleration-cover-2.jpg
 draft: false
 ---
 
