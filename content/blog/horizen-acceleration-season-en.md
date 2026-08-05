@@ -4,15 +4,15 @@ lang: en
 date: 2026-08-05
 excerpt: "Crecimiento and Horizen launch a six-week online program for startups ready to build on Vela, Horizen's confidential coprocessor: from a first integration to a product with real users behind it. Applications close August 24."
 tag: Program
-cover: /images/blog/horizen-acceleration-cover-2.jpg
+cover: /images/blog/horizen-acceleration-cover-3.jpg
 draft: false
 ---
 
 **Some products can't exist on public blockchains: the logic is too sensitive, the data too private. That's exactly what we want you to build.**
 
-Crecimiento and Horizen are launching the Horizen Acceleration Season: a six-week online program for startups ready to build on Vela, Horizen's confidential coprocessor, and turn a first integration into a product with real users behind it.
+Crecimiento and Horizen are launching the Horizen Acceleration Season: a six-week online program for startups ready to build on [Vela](https://horizenlabs.io/vela/), [Horizen](https://www.horizen.io/)'s confidential coprocessor, and turn a first integration into a product with real users behind it.
 
-We're selecting a small cohort worldwide to be part of the first teams building on Vela while it's still in early access, shaping the product alongside the team that makes it.
+We're selecting a small cohort worldwide to be part of the first teams building on Vela while it's still in early access, shaping the product alongside the team that makes it, top tier mentors and speakers.
 
 **Applications close August 24.**
 
