@@ -31,6 +31,8 @@ The program follows a three-phase arc: Build, Grow, Show, opening with an onboar
 - **Grow (Weeks 4–5):** Stress-test your business model, nail your GTM strategy, and figure out how you'll make money through your product. Mentors challenge your assumptions and the Horizen BD team opens doors.
 - **Show (Week 6):** Refine your pitch, polish your demo, and deliver at the online Demo Day. This is where you prove what you've built, and what comes next.
 
+![Horizen Acceleration Season — the 6-week program](/images/blog/horizen-blog-1.png)
+
 ## What is Vela?
 
 Vela is a confidential coprocessor: you package your logic as a WASM job, run it inside a sealed TEE (trusted execution environment), and settle the result onchain. In Vela's own words: "Run logic in private. Settle publicly onchain".
