@@ -5,12 +5,12 @@ date: 2026-08-25
 excerpt: "Crecimiento y Circle lanzan un programa online de seis semanas para startups fintech y de IA de Latam listas para construir sobre Arc, la blockchain stablecoin-native desarrollada por Circle, y llevar una integración viva hasta producción. Las aplicaciones cierran el 22 de septiembre."
 tag: Program
 cover: /images/blog/circle-acceleration-cover.jpg
-draft: true
+draft: false
 ---
 
 **Las finanzas del mundo real se están moviendo onchain: pagos, FX, crédito, activos tokenizados. Arc es la Layer-1 construida exactamente para eso, y queremos que construyas sobre ella.**
 
-Crecimiento y [Circle](https://www.circle.com/) lanzan la Circle Acceleration Season: un programa online de seis semanas para startups fintech y de IA de Latam listas para construir sobre Arc, la blockchain stablecoin-native desarrollada por Circle, y llevar una integración viva hasta producción.
+Crecimiento y [Circle](https://www.circle.com/) lanzan la Circle Acceleration Season: un programa online de seis semanas para startups fintech y de IA de Latam listas para construir sobre [Arc](https://www.arc.io/), la blockchain stablecoin-native desarrollada por Circle, y llevar una integración viva hasta producción.
 
 Estamos seleccionando una cohorte enfocada para construir sobre Arc mientras la red llega a mainnet, dándole forma a sus productos en la infraestructura donde van a correr los flujos financieros del mundo real.
 
