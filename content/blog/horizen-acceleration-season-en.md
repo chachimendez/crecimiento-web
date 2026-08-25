@@ -14,7 +14,7 @@ Crecimiento and Horizen are launching the Horizen Acceleration Season: a six-wee
 
 We're selecting a small cohort worldwide to be part of the first teams building on Vela while it's still in early access, shaping the product alongside the team that makes it, top tier mentors and speakers.
 
-**Applications close September 1st.**
+**Applications close September 1.**
 
 [button:Apply to the Horizen Acceleration Season](https://airtable.com/appGGpgjSlDjntK7k/pagGfSZd1LCqfr1Fw/form)
 
@@ -70,9 +70,9 @@ Whether you're crypto-native or a web2 team entering web3, if your product needs
 
 ## Key dates
 
-- Applications close: September 1st, 2026
-- Selected teams announced: August 26, 2026
-- Program starts: September 7th, 2026
-- Demo Day (online): October 8, 2026
+- Applications close: September 1, 2026
+- Selected teams announced: September 4, 2026
+- Program starts: September 7, 2026
+- Demo Day (online): October 22, 2026
 
 [button:Apply to the Horizen Acceleration Season](https://airtable.com/appGGpgjSlDjntK7k/pagGfSZd1LCqfr1Fw/form)

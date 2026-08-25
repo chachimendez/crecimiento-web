@@ -71,8 +71,8 @@ Seas cripto-nativo o un equipo web2 entrando a web3, si tu producto necesita ver
 ## Fechas clave
 
 - Cierre de aplicaciones: 1 de septiembre de 2026
-- Anuncio de equipos seleccionados: 26 de agosto de 2026
+- Anuncio de equipos seleccionados: 4 de septiembre de 2026
 - Arranque del programa: 7 de septiembre de 2026
-- Demo Day (online): 8 de octubre de 2026
+- Demo Day (online): 22 de octubre de 2026
 
 [button:Aplicar a la Horizen Acceleration Season](https://airtable.com/appGGpgjSlDjntK7k/pagGfSZd1LCqfr1Fw/form)
