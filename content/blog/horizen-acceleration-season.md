@@ -14,7 +14,7 @@ Crecimiento y Horizen lanzan la Horizen Acceleration Season: un programa online 
 
 Estamos seleccionando una cohorte chica, de cualquier parte del mundo, para estar entre los primeros equipos construyendo sobre Vela mientras está en early access, dándole forma al producto junto al equipo que lo hace, mentores y speakers de primer nivel.
 
-**Las aplicaciones cierran el 1 de septiembre.**
+**Las aplicaciones cierran el 2 de septiembre.**
 
 [button:Aplicá a la Horizen Acceleration Season](https://airtable.com/appGGpgjSlDjntK7k/pagGfSZd1LCqfr1Fw/form)
 
@@ -70,9 +70,9 @@ Seas cripto-nativo o un equipo web2 entrando a web3, si tu producto necesita ver
 
 ## Fechas clave
 
-- Cierre de aplicaciones: 1 de septiembre de 2026
+- Cierre de aplicaciones: 2 de septiembre de 2026
 - Anuncio de equipos seleccionados: 4 de septiembre de 2026
 - Arranque del programa: 7 de septiembre de 2026
-- Demo Day (online): 22 de octubre de 2026
+- Demo Day (online): 15 de octubre de 2026
 
 [button:Aplicar a la Horizen Acceleration Season](https://airtable.com/appGGpgjSlDjntK7k/pagGfSZd1LCqfr1Fw/form)
