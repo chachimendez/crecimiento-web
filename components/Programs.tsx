@@ -10,45 +10,6 @@ export default function Programs({ lang = "en" }: { lang?: Lang }) {
       className="px-6 md:px-16 pt-8 md:pt-10 pb-24 md:pb-32"
     >
       <div className="max-w-6xl mx-auto">
-        {/* LDAC — upcoming highlight (full art banner, links to the LDAC site) */}
-        <p
-          className="text-xs uppercase tracking-widest mb-4"
-          style={{ color: "var(--transition-gray)" }}
-        >
-          {t.nextEvent}
-        </p>
-        <div
-          className="relative mb-16 overflow-hidden rounded-[4px] border"
-          style={{ borderColor: "var(--adaptable-gray)" }}
-        >
-          <Image
-            src={t.ldacImg}
-            alt={t.ldacAlt}
-            width={2400}
-            height={849}
-            className="w-full h-auto"
-          />
-          {/* Real button covering the DISCOVER MORE baked into the art */}
-          <a
-            href="https://digitalassetsconf.crecimiento.build/"
-            target="_blank"
-            rel="noopener"
-            className="absolute flex items-center justify-center rounded-lg transition-transform duration-200 hover:scale-110"
-            style={{
-              ...t.ldacBtn,
-              backgroundColor: "#161616",
-              color: "#FFFFFF",
-              fontStyle: "italic",
-              fontWeight: 500,
-              fontSize: "clamp(6px, 1.45vw, 17px)",
-              letterSpacing: "0.02em",
-              whiteSpace: "nowrap",
-            }}
-          >
-            {t.discoverMore}
-          </a>
-        </div>
-
         {/* Section heading */}
         <p
           className="text-xs uppercase tracking-widest mb-4"
