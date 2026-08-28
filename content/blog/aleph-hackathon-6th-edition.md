@@ -1,66 +1,38 @@
 ---
-title: "Aleph Hackathon, 6ª edición"
+title: "Aleph Hackathon: la sexta edición (agosto 2026)"
 lang: es
-date: 2026-08-08
-excerpt: "Vuelve el hackathon de Crecimiento: el 22 y 23 de agosto, 48 horas para armar equipo, encarar desafíos reales y shipear un proyecto funcionando — con chapters por Argentina y Latam, y totalmente online. La inscripción está abierta."
-tag: Program
+date: 2026-08-23
+excerpt: "Más de 650 hackers, 150 proyectos y 11 chapters en siete países, con México entrando a la red por primera vez, en el cierre de Aleph Week."
+tag: Recap
 cover: /images/blog/aleph-hackathon-6-cover.jpg
 draft: false
 ---
 
-**Vuelve el hackathon de Crecimiento: 48 horas para armar equipo, encarar desafíos reales y shipear un proyecto funcionando.**
+La sexta edición del Aleph Hackathon se corrió el 22 y 23 de agosto como cierre de Aleph Week, la semana que reunió en Buenos Aires al ecosistema builder e institucional de la región, con la [LATAM Digital Assets Conf](/es/blog/latam-digital-assets-conf) y la [Startup World Cup](/es/blog/startup-world-cup-26) en los días previos. Más de 650 hackers presentaron 150 proyectos, con más de 500 participantes presenciales en 11 chapters de siete países. Fue la edición que contó con más países participando en simultáneo hasta ahora: Buenos Aires, Rosario, Salta y Mendoza en la Argentina; Cochabamba y Santa Cruz en Bolivia; Lima en Perú; Bogotá en Colombia; San José en Costa Rica; Cuenca en Ecuador; y Puebla en México, que entró a la red por primera vez. Buenos Aires, sede del Aleph Hub, fue el nodo más grande, con más de 130 participantes durante el fin de semana.
 
-El 22 y 23 de agosto, el Aleph Hackathon corre su sexta edición, nuevamente con chapters independientes por Argentina y Latinoamérica — y totalmente online — todos con el mismo cronograma y frente al mismo jurado.
+![El Aleph Hub durante el fin de semana del hackathon](/images/blog/aleph-hackathon-6-recap-1.jpg)
 
-Si tenés un fin de semana y algo para demostrar, acá es donde lo construís.
+Cuatro tracks dieron forma a la edición. Tres se armaron sobre el stack tecnológico de Tether: WDK, un toolkit open source para construir wallets self-custodial multi-chain; Pears, una plataforma peer-to-peer para aplicaciones que corren directamente entre dispositivos, sin servidores; y QVAC, un SDK de inteligencia artificial que corre modelos localmente en el dispositivo del usuario. El cuarto, el General Track, premió a los mejores proyectos del fin de semana sin importar la categoría.
 
-**La inscripción está abierta.**
+![Un equipo debate con el contador de entrega corriendo de fondo](/images/blog/aleph-hackathon-6-recap-2.jpg)
 
-[button:Inscribite como hacker](https://airtable.com/appGGpgjSlDjntK7k/pagBL5Rcb1yhryRQl/form)
+Cada track tuvo sus ganadores:
 
-## Cinco ediciones después
+- WDK Track: Minkaly, con Nana Wallet en segundo lugar
+- Pears Track: I'm OK, con RandomSpacer en segundo lugar
+- QVAC Track: Warden, con Al Toque en segundo lugar y menciones especiales para Calgary Parking y Qpay
+- General Track: BabyShark VC, con Runa RPG en segundo lugar
 
-El Aleph Hackathon nació en agosto de 2024, dentro de la primera pop-up city de Aleph, y no paró de crecer: en cinco ediciones, más de 3.000 hackers shipearon cientos de proyectos. La edición de agosto de 2025 lo convirtió en el hackathon más grande de Latinoamérica por participación, y fue la primera en correr sobre una red distribuida de chapters locales en vez de una sola sala. March 2026 llevó el modelo más lejos: 12 chapters en 5 países. Desde agosto de 2025, todas las ediciones son globales.
+Se repartieron 5.500 dólares en premios. El QVAC Track sumó además el Vault Guardian Challenge, un pozo de 500 dólares repartido entre todos los que completaron su desafío de seguridad de prompt injection.
 
-## Soporte antes y durante el evento
+![Horas de hacking en el Aleph Hub, con la placa de Blockchain for Good Alliance en la mesa](/images/blog/aleph-hackathon-6-recap-3.jpg)
 
-Dos días es una ventana corta, así que la estructura de soporte arranca antes de que abra el hackathon.
+El fin de semana tuvo 19 jueces y mentores y tres workshops.
 
-- **Directorio de mentores.** Decenas de mentores con experiencia, organizados por área, ecosistema e idioma, disponibles en office hours durante todo el fin de semana.
-- **Workshops de partners.** Sesiones técnicas a cargo de sponsors y partners del ecosistema, pensadas para participantes de todos los niveles.
-- **Canales de comunidad.** El Telegram del hackathon es donde se arman los equipos, se responden preguntas y los chapters se coordinan entre sí.
-- **Ceremonias en vivo.** La apertura y el cierre se transmiten por X y YouTube, así los builders de todos los chapters arrancan y terminan juntos.
+Gracias a los sponsors que hicieron posible la edición: Tether, que además de los tres tracks estuvo a cargo de dos workshops y de la mentoría a los equipos durante todo el fin de semana, y Blockchain for Good Alliance, la iniciativa global sin fines de lucro fundada por Bybit que impulsa blockchain con impacto social y dictó el tercer workshop.
 
-## El modelo de chapters
+Y gracias a las comunidades que organizaron los chapters localmente: Dev3pack, ETH Ecuador, CochaBlock, DesafIA, Salta Dev, 3S Blockchain, Ethereum Lima, ZEEK, NEXA, Ethereum Bolivia y CuyoConnect.
 
-Un chapter es un hub local que corre el Aleph Hackathon en su propia ciudad. Universidades, coworks, hacker houses y hubs de comunidad abren sus puertas el fin de semana y reciben builders localmente, integrados a la estructura central: mismos desafíos, mismo deadline de entrega, mismo jurado, mismo pozo de premios.
+![El anuncio de los chapters de la edición en el Aleph Hub](/images/blog/aleph-hackathon-6-recap-4.jpg)
 
-Los chapters los organizan las propias comunidades. Conocen su ciudad, saben quién construye ahí y manejan la experiencia local. Lo que pone Crecimiento es la capa compartida que los conecta a todos: los desafíos, los mentores, el jurado, los streams y los premios.
-
-Detrás del modelo hay una intención simple: hacer el hackathon federal. El talento está en todos lados — en universidades, hacker houses y comunidades de Argentina y la región — y la red de chapters existe para que los builders participen en igualdad de condiciones estén donde estén, sin tener que mudarse a Buenos Aires.
-
-El resultado: un builder en Cuenca, Ikorodu o La Plata tiene el mismo acceso que cualquier otro que hackee ese fin de semana. Y como el hackathon también corre totalmente online, cualquiera sin un chapter cerca puede inscribirse y participar en exactamente las mismas condiciones.
-
-![Chapters del Aleph Hackathon](/images/blog/aleph-hackathon-6-chapter.jpg)
-
-## Parte de Aleph Week
-
-Aleph Week va del 18 al 23 de agosto en Buenos Aires y reúne a dos públicos distintos.
-
-- **20 y 21 de agosto: [LATAM Digital Assets Conf](/es/blog/latam-digital-assets-conf).** Dos días con bancos, fintechs, exchanges, fondos y reguladores discutiendo pagos, seguridad y adopción de tokenización en la región.
-- **21 de agosto: [Startup World Cup](/es/blog/startup-world-cup-26).** La competencia de startups de Crecimiento, que existe para poner a los founders frente a los fondos que pueden llevarlos más lejos.
-- **22 y 23 de agosto: Aleph Hackathon.** El lado builder de la misma semana, donde esas ideas se convierten en productos funcionando.
-
-Cada evento es independiente y requiere su propia inscripción, aunque muchos participan de más de uno.
-
-## Cómo sumarte
-
-**Como hacker.** La inscripción está abierta a developers, diseñadores, estudiantes, founders, investigadores y cualquiera que quiera shipear algo real en dos días. Podés sumarte desde un chapter en tu ciudad o hackear totalmente online.
-
-[button:Inscribite como hacker](https://airtable.com/appGGpgjSlDjntK7k/pagBL5Rcb1yhryRQl/form)
-
-**Como sponsor.** El sponsoreo da a empresas, fondos y protocolos acceso directo al ecosistema builder en ciudades de Argentina y Latam a la vez, más exposición a la audiencia institucional de las conferencias de esa misma semana. Contactanos por la web oficial.
-
-**Como chapter host.** Las comunidades que quieran correr una edición local todavía pueden aplicar por la web oficial.
-
-[button:Visitá la web oficial](https://alephhackathon.crecimiento.build/)
+El hackathon abre el Builder Funnel de Crecimiento, que sigue con las Acceleration Seasons: [Circle](/es/blog/circle-acceleration-season) y [Horizen](/es/blog/horizen-acceleration-season) ya tienen su convocatoria abierta.
