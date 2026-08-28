@@ -1,31 +1,29 @@
 ---
-title: "Startup World Cup is back"
+title: "Startup World Cup: the second edition (August 2026)"
 lang: en
-date: 2026-07-29
-excerpt: "On August 21, at Aleph Hub in Buenos Aires, ten teams pitch in front of funds that invest in Latin America, right after the LATAM Digital Assets Conf closes. Applications are open until August 19."
-tag: Program
+date: 2026-08-21
+excerpt: "Seven startups pitched at Aleph Hub in front of a jury of four investors, closing the LATAM Digital Assets Conf. Nora Finance took the win and a spot in Inception, Andén's program."
+tag: Recap
 cover: /images/blog/swc-26-cover-2.jpg
 draft: false
 ---
 
-The Startup World Cup is Crecimiento's startup competition, and it exists to put founders in front of the funds that can take them further. This year it returns. On August 21, at Aleph Hub in Buenos Aires, ten teams present their projects in front of funds that invest in startups across Latin America, right after the LATAM Digital Assets Conf closes, with the conference's institutional room still in the building. The competition is part of Aleph Week, a full week of events shaping the future of technology in Buenos Aires, from August 18 to 23.
+The second edition of the Startup World Cup took place on August 21 at Aleph Hub, right after the [LATAM Digital Assets Conf](/blog/latam-digital-assets-conf-en) closed and with the conference's institutional audience still in the auditorium. Seven startups pitched in a single round, three minutes per team plus two of questions, in front of a jury of four investors who invest across Latin America. Arturo Grande, Regional Ambassador at Celo, hosted the evening.
 
-Every founder says their startup can compete. This is where you prove it. If you have something to show, this is your match.
+![Arturo Grande hosted the evening](/images/blog/swc-26-recap-1.jpg)
 
-Applications close on August 19.
+The seven selected: Luca Money, an app to receive, invest and spend directly in stablecoins; Aqua0, cross-chain shared liquidity infrastructure for stablecoin issuers; Autiffy, an ERP for the automotive market; Nora Finance, building BRS, a stablecoin backed 1:1 by the Brazilian real, along with the infrastructure to operate in BRL onchain; Compass, a firewall that intercepts risky actions by AI agents before they execute; Piggy Wallet, a family app where kids earn money by completing chores and save toward concrete goals; and Sequencer, a platform for brands and IP owners to turn their characters and stories into AI-powered interactive games. Two of them, Aqua0 and Nora Finance, arrived through the fast track from the [Uniswap Acceleration Season](/blog/uniswap-acceleration-season-en).
 
-[button:Apply to the Startup World Cup](https://airtable.com/appGGpgjSlDjntK7k/pagEqB1tsgEI7hMRQ/form)
+![Luca Money's pitch](/images/blog/swc-26-recap-2.jpg)
 
-## This edition's format
+The jury brought together four investors active in the region: Jerónimo Alazraki, from Latitud; Mateo Guigue, from Newtopia; Nicolás Zylberberg, from Lucero Ventures; and Milagros Santamaría, from Andén. They heard the seven pitches, asked the questions and deliberated the result. Thanks to all four for the time and judgment they brought to the competition.
 
-Ten teams, a panel of investors, three minutes, and questions after each pitch. The session is open to everyone attending the LATAM Digital Assets Conf, and the room stays open afterward for conversations between founders and investors.
+![Nora Finance's pitch, seen from the audience](/images/blog/swc-26-recap-3.jpg)
 
-Held in November during Devconnect, the [first edition](/blog/startup-world-cup-en) gathered 219 startups from more than 40 countries. The 12 finalists pitched on the main stage of La Rural in front of a panel with representatives of funds like Pantera Capital, Dragonfly, Variant, Franklin Templeton and CoinFund. Peanut took the title.
+Once the seven pitches were done, the jury chose Nora Finance as the winner. BRS is already live on Solana, with EVM support on the way and more than five ecosystem partners integrated. The team takes a spot in Inception, Andén's new program for Latin American tech companies.
 
-The Startup World Cup is the final stage of Crecimiento's builder funnel. Hackathons bring new projects in, Acceleration Seasons give teams structure and mentorship, and the Startup World Cup puts them in front of investors. You don't need to have gone through any other program first.
+![The award handed to Nora Finance](/images/blog/swc-26-recap-4.jpg)
 
-## Apply
+Thanks also to Andén and Lucero Ventures, the two partners behind this edition; Andén also provided the prize.
 
-This edition is open to startups across tech: if you're building in Web3, artificial intelligence or any other field, apply. Applications close on August 19. The ten selected teams will be announced on August 20.
-
-[button:Apply to the Startup World Cup](https://airtable.com/appGGpgjSlDjntK7k/pagEqB1tsgEI7hMRQ/form)
+Held in November during Devconnect, the [first edition](/blog/startup-world-cup-en) gathered 219 startups from more than 40 countries, with Peanut as champion. The Startup World Cup is the final stage of Crecimiento's builder funnel: hackathons bring in new projects, the Acceleration Seasons give them structure and mentorship, and the competition puts them in front of investors. The day after the event, the [Aleph Hackathon](/blog/aleph-hackathon-6th-edition-en) kicked off, the other side of the same week.
