@@ -31,6 +31,8 @@ The program follows a three-phase arc: Build, Ship, Show, opening with an onboar
 - **Ship (Weeks 4–5):** Take the product into production. Deploy on Arc mainnet and harden it for performance, cost and edge cases, while you sharpen your go-to-market: who your first customers on Arc are and how you'll win them.
 - **Show (Week 6):** Refine your pitch, polish your demo, and deliver at the online Demo Day. This is where you prove what you shipped and how it will help you continue to scale.
 
+![The program week by week](/images/blog/arc-acceleration-weeks-1.jpg)
+
 ## About Circle
 
 Circle (NYSE: CRCL) is a global financial technology firm that enables businesses of all sizes to harness the power of digital currencies and public blockchains for payments, commerce, and financial applications worldwide.
