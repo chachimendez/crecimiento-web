@@ -1,7 +1,7 @@
 ---
 title: "Arc Acceleration Season"
 lang: es
-date: 2026-08-25
+date: 2026-09-02
 excerpt: "Crecimiento y Arc lanzan un programa online de seis semanas para startups fintech y de IA de Latam listas para construir sobre Arc, la blockchain stablecoin-native desarrollada por Circle, y llevar su negocio a su próxima fase de crecimiento. Las aplicaciones cierran el 22 de septiembre."
 tag: Program
 cover: /images/blog/arc-acceleration-cover-1.jpg
