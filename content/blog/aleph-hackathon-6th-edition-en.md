@@ -35,4 +35,4 @@ And thanks to the communities that organized the chapters locally: Dev3pack, ETH
 
 ![The announcement of this edition's chapters at Aleph Hub](/images/blog/aleph-hackathon-6-recap-4.jpg)
 
-The hackathon opens Crecimiento's Builder Funnel, which continues with the Acceleration Seasons: [Arc](/blog/circle-acceleration-season-en) and [Horizen](/blog/horizen-acceleration-season-en) are open for applications.
+The hackathon opens Crecimiento's Builder Funnel, which continues with the Acceleration Seasons: [Arc](/blog/arc-acceleration-season-en) and [Horizen](/blog/horizen-acceleration-season-en) are open for applications.
