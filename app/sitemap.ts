@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/blog`, lastModified: now, priority: 0.7 },
     { url: `${SITE_URL}/es/blog`, lastModified: now, priority: 0.6 },
     { url: `${SITE_URL}/media-kit`, lastModified: now, priority: 0.5 },
+    { url: `${SITE_URL}/privacidad`, lastModified: now, priority: 0.2 },
   ];
 
   const posts: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
