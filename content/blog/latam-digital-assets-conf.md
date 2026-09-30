@@ -54,7 +54,7 @@ La conferencia abrió la Aleph Week. El 22 y 23 de agosto se realizó la sexta e
 
 ## Sponsors y partners
 
-Circle y Tether acompañaron como Gold Sponsors. Rain, belo, Horizen, Twin, EverValue, Tangem, Interlace, Andén, Naranja X, Reap, ChainPatrol, Paisanos, SyLS y Protocol Labs lo hicieron como Silver Sponsors. Workplace by IRSA fue la sede de las dos jornadas. Planta organizó el networking con Porter, un agente que funciona por WhatsApp, informa a cada asistente quién estará presente y coordina presentaciones cuando ambas partes aceptan.
+Circle y Tether acompañaron como Gold Sponsors. Rain, belo, Horizen, Twin, EverValue, Tangem, Interlace, Andén, Naranja X, Reap, ChainPatrol, Paisanos, SyLS y Protocol Labs lo hicieron como Silver Sponsors. Planta organizó el networking con Porter, un agente que funciona por WhatsApp, informa a cada asistente quién estará presente y coordina presentaciones cuando ambas partes aceptan.
 
 La segunda edición de la LATAM Digital Assets Conf se realizará en agosto de 2027. Hasta entonces, las Acceleration Seasons de Crecimiento, programas de varias semanas junto a protocolos partners que cierran con Demo Days frente a fondos, dan continuidad al recorrido de las startups que participaron en la Startup World Cup y en el hackathon.
 
