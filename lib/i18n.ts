@@ -208,6 +208,7 @@ const en = {
           external: true,
         },
         { label: "Media Kit", href: "/media-kit", external: false },
+        { label: "Code of Conduct", href: "/conducta", external: false },
         { label: "Calendar", href: "https://luma.com/crecimiento", external: true },
       ],
       [
@@ -553,6 +554,7 @@ const es: Dict = {
           external: true,
         },
         { label: "Media Kit", href: "/media-kit", external: false },
+        { label: "Código de conducta", href: "/conducta", external: false },
         { label: "Calendario", href: "https://luma.com/crecimiento", external: true },
       ],
       [
