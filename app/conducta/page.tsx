@@ -122,8 +122,8 @@ export default function ConductaPage() {
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
               Cuando reportás, Crecimiento acusa recibo, escucha a la persona
-              afectada, toma medidas inmediatas si la situación lo requiere y
-              hace seguimiento hasta cerrar el caso. Todo reporte se trata con
+              afectada y toma medidas inmediatas si la situación lo requiere.
+              Todo reporte se trata con
               confidencialidad, y nadie sufre consecuencias por reportar de
               buena fe. Este canal complementa y no reemplaza las vías legales
               disponibles según la legislación vigente.
