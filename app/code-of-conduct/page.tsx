@@ -121,9 +121,9 @@ export default function CodeOfConductPage() {
               this channel in plain sight.
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
-              When you report, Crecimiento acknowledges receipt, listens to the
-              person affected and takes immediate measures if the situation
-              requires it. Every report is handled confidentially, and nobody
+              When you report, we get back to you, listen to the person
+              affected and take immediate measures if the situation requires
+              it. Every report is handled confidentially, and nobody
               faces consequences for reporting in good faith. This channel
               complements the legal avenues available under current law; it
               does not replace them.
