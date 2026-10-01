@@ -208,7 +208,7 @@ const en = {
           external: true,
         },
         { label: "Media Kit", href: "/media-kit", external: false },
-        { label: "Code of Conduct", href: "/conducta", external: false },
+        { label: "Code of Conduct", href: "/code-of-conduct", external: false },
         { label: "Calendar", href: "https://luma.com/crecimiento", external: true },
       ],
       [

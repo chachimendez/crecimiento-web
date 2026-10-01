@@ -5,7 +5,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Código de conducta",
-  alternates: { canonical: "/conducta" },
+  alternates: {
+    canonical: "/conducta",
+    languages: { es: "/conducta", en: "/code-of-conduct" },
+  },
   description:
     "Código de conducta de Crecimiento. Vale en toda actividad de la comunidad, en cualquier sede, presencial o virtual.",
 };
