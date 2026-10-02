@@ -94,11 +94,13 @@ export default function CodeOfConductPage() {
             <h2 className={h2} style={h2Style}>/GENDER, DIVERSITY AND DISCRIMINATION</h2>
             <p className={p} style={pStyle}>
               Crecimiento has zero tolerance for gender-based violence,
-              harassment and discrimination. To act on these situations we
-              have a public Gender and Discrimination Protocol that sets out
-              how a report is received, who accompanies it and which steps
-              follow. We will publish it on this page as soon as it has been
-              agreed with the community.
+              harassment and discrimination. Together with the community and
+              with specialized advice, we are building a Gender and
+              Discrimination Protocol that will set out how a report is
+              received, who accompanies it and which steps follow. We will
+              publish it on this page as soon as it is agreed. In the
+              meantime, any situation is reported through the channels in the
+              next section.
             </p>
           </section>
 
@@ -118,8 +120,7 @@ export default function CodeOfConductPage() {
             </ul>
             <p className={`mt-4 ${p}`} style={pStyle}>
               If reporting directly is hard for you, you can ask someone you
-              trust to report on your behalf. Every activity has signage with
-              this channel in plain sight.
+              trust to report on your behalf.
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
               When you report, we get back to you, listen to the person
@@ -188,8 +189,8 @@ export default function CodeOfConductPage() {
             <p className={p} style={pStyle}>
               Anyone who breaches this code may be asked to leave the activity
               on the spot, and Crecimiento may deny them access to future
-              activities. Situations related to gender and discrimination also
-              follow the protocol&apos;s procedure.
+              activities. Situations related to gender and discrimination will
+              also follow the protocol&apos;s procedure once it is published.
             </p>
           </section>
 

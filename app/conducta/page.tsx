@@ -97,11 +97,13 @@ export default function ConductaPage() {
             <h2 className={h2} style={h2Style}>/GÉNERO, DIVERSIDAD Y DISCRIMINACIÓN</h2>
             <p className={p} style={pStyle}>
               Crecimiento tiene tolerancia cero frente a la violencia de
-              género, el acoso y la discriminación. Para actuar ante estas
-              situaciones contamos con un Protocolo de género y
-              discriminación, público, que establece cómo se recibe un
+              género, el acoso y la discriminación. Estamos armando, junto con
+              la comunidad y con asesoramiento especializado, un Protocolo de
+              género y discriminación que va a establecer cómo se recibe un
               reporte, quién lo acompaña y qué pasos se siguen. Lo publicamos
-              en esta misma página en cuanto esté acordado con la comunidad.
+              en esta misma página en cuanto esté acordado. Mientras tanto,
+              cualquier situación se reporta por los canales de la sección
+              siguiente.
             </p>
           </section>
 
@@ -121,8 +123,7 @@ export default function ConductaPage() {
             </ul>
             <p className={`mt-4 ${p}`} style={pStyle}>
               Si te cuesta hacerlo directamente, podés pedirle a una persona de
-              confianza que reporte por vos. En cada actividad hay cartelería
-              con este canal a la vista.
+              confianza que reporte por vos.
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
               Cuando reportás, te respondemos, escuchamos a la persona afectada
@@ -192,7 +193,8 @@ export default function ConductaPage() {
               Quien incumpla este código puede ser invitado a retirarse de la
               actividad en el momento, y Crecimiento puede negarle el acceso a
               actividades futuras. Las situaciones vinculadas a género y
-              discriminación siguen además el procedimiento del protocolo.
+              discriminación seguirán además el procedimiento del protocolo
+              cuando esté publicado.
             </p>
           </section>
 
