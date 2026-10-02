@@ -80,7 +80,8 @@ export default function CodeOfConductPage() {
               on screen, and any conduct based on, or directed at, skin color,
               nationality, gender, gender identity, sexual orientation,
               political views, age, appearance, body size, physical or mental
-              ability, religion or pregnancy.
+              ability, religion, pregnancy or any other trait used to make
+              someone feel less than others.
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
               Every conversation is held in a tone that respects the other

@@ -81,8 +81,9 @@ export default function ConductaPage() {
               dirigida a, el color de piel, la nacionalidad, el género, la
               identidad de género, la orientación sexual, la orientación
               política, la edad, la apariencia, el tamaño corporal, las
-              capacidades físicas o mentales, la religión o el estado de
-              embarazo.
+              capacidades físicas o mentales, la religión, el estado de
+              embarazo o cualquier otra condición que se use para hacer sentir
+              menos a una persona.
             </p>
             <p className={`mt-4 ${p}`} style={pStyle}>
               Toda conversación se lleva adelante en un tono que respete al
