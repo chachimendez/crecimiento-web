@@ -1,7 +1,7 @@
 ---
 title: "Monad Metropolis in Latin America (October 2026)"
 lang: en
-date: 2026-10-13
+date: 2026-10-03
 excerpt: "Metropolis, Monad's global hackathon, came to the region through Crecimiento, with an in-person day held simultaneously in six cities across Argentina and Bolivia."
 tag: Recap
 cover: /images/blog/monad-metropolis-latam-cover.jpg
