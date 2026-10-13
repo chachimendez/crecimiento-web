@@ -18,6 +18,8 @@ The agenda included the *Hackathon Experiences* panel with Marcos Lanzani, found
 
 ![Marcos Lanzani, Tomás Mazzitello and Ignacio Becerra on the Hackathon Experiences panel](/images/blog/monad-metropolis-latam-panel.jpg)
 
+[video](https://youtu.be/Ag6zwg8xvKE)
+
 Many of the builders had already hacked with Crecimiento at Blitz Buenos Aires or the Aleph Hackathon, and came back with more experience and their sights set on a global competition. For others, Metropolis was their first chance to take part in an international hackathon in their own city.
 
 ![The Metropolis tote bag, part of every participant's kit](/images/blog/monad-metropolis-latam-tote.jpg)
