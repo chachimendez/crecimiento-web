@@ -1,32 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { getDict, type Lang } from "@/lib/i18n";
-
-function useCountUp(target: number, duration = 1400) {
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) {
-      setValue(target);
-      return;
-    }
-    let raf: number;
-    const start = performance.now();
-    const tick = (now: number) => {
-      const t = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - t, 3);
-      setValue(Math.round(target * eased));
-      if (t < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [target, duration]);
-
-  return value;
-}
 
 function Stat({
   target,
@@ -37,14 +13,13 @@ function Stat({
   label: string;
   locale: string;
 }) {
-  const value = useCountUp(target);
   return (
     <div className="flex flex-col items-center gap-1 text-center">
       <span
         className="text-4xl md:text-5xl tabular-nums"
         style={{ fontWeight: 700, color: "var(--foundation-black)" }}
       >
-        +{value.toLocaleString(locale)}
+        +{target.toLocaleString(locale)}
       </span>
       <span
         className="text-xs leading-snug"

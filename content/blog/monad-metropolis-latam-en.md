@@ -18,8 +18,6 @@ The agenda included the *Hackathon Experiences* panel with Marcos Lanzani, found
 
 ![Marcos Lanzani, Tomás Mazzitello and Ignacio Becerra on the Hackathon Experiences panel](/images/blog/monad-metropolis-latam-panel.jpg)
 
-[video](https://youtu.be/Ag6zwg8xvKE)
-
 Many of the builders had already hacked with Crecimiento at Blitz Buenos Aires or the Aleph Hackathon, and came back with more experience and their sights set on a global competition. For others, Metropolis was their first chance to take part in an international hackathon in their own city.
 
 ![The Metropolis tote bag, part of every participant's kit](/images/blog/monad-metropolis-latam-tote.jpg)
@@ -29,3 +27,5 @@ Metropolis reached cities where international hackathons rarely arrive, and the 
 The Metropolis build window closes on October 13. Project judging runs from October 14 to 27, and global winners will be announced on November 3. Crecimiento will follow the teams from Argentina and Bolivia closely through this final stretch and share their results.
 
 Thanks to Salta Dev, Jujuy Dev, CuyoConnect, NEXA and CochaBlock for bringing Metropolis to their cities, to mentors Facundo Padilla, Gabriel Aufgang, Mauricio Medina, Favio Montealegre, Alejandro Repetto, Ian Healy, Franco Duran and Joaquin Cortez for supporting the teams, and to the Monad Foundation for making it possible.
+
+[video](https://youtu.be/Ag6zwg8xvKE)
