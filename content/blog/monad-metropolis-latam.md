@@ -24,6 +24,6 @@ Muchos de los builders ya habían hackeado con Crecimiento en Blitz Buenos Aires
 
 Metropolis llegó a ciudades donde los hackathons internacionales llegan pocas veces, y la respuesta de sus comunidades confirmó que el talento para construir está distribuido en toda la región.
 
-La ventana de construcción de Metropolis cerró el 13 de octubre. La evaluación de los proyectos corre del 14 al 27 de octubre y los ganadores globales se anuncian el 3 de noviembre. Crecimiento va a seguir de cerca a los equipos de Argentina y Bolivia en este tramo final y a compartir sus resultados.
+La ventana de construcción de Metropolis cierra el 13 de octubre. La evaluación de los proyectos corre del 14 al 27 de octubre y los ganadores globales se anuncian el 3 de noviembre. Crecimiento va a seguir de cerca a los equipos de Argentina y Bolivia en este tramo final y a compartir sus resultados.
 
 Gracias a Salta Dev, Jujuy Dev, CuyoConnect, NEXA y CochaBlock por llevar Metropolis a sus ciudades, a los mentores Facundo Padilla, Gabriel Aufgang, Mauricio Medina, Favio Montealegre, Alejandro Repetto, Ian Healy, Franco Duran y Joaquin Cortez por acompañar a los equipos, y a la Monad Foundation por hacerlo posible.

@@ -24,6 +24,6 @@ Many of the builders had already hacked with Crecimiento at Blitz Buenos Aires o
 
 Metropolis reached cities where international hackathons rarely arrive, and the response from their communities confirmed that the talent to build is spread across the entire region.
 
-The Metropolis build window closed on October 13. Project judging runs from October 14 to 27, and global winners will be announced on November 3. Crecimiento will follow the teams from Argentina and Bolivia closely through this final stretch and share their results.
+The Metropolis build window closes on October 13. Project judging runs from October 14 to 27, and global winners will be announced on November 3. Crecimiento will follow the teams from Argentina and Bolivia closely through this final stretch and share their results.
 
 Thanks to Salta Dev, Jujuy Dev, CuyoConnect, NEXA and CochaBlock for bringing Metropolis to their cities, to mentors Facundo Padilla, Gabriel Aufgang, Mauricio Medina, Favio Montealegre, Alejandro Repetto, Ian Healy, Franco Duran and Joaquin Cortez for supporting the teams, and to the Monad Foundation for making it possible.
