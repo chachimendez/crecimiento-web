@@ -1,7 +1,7 @@
 ---
 title: Horizen Acceleration Season (2026)
 lang: es
-date: 2026-10-20
+date: 2026-10-15
 excerpt: "Seis semanas de aceleración online junto a Horizen: 11 startups construyendo sobre Vela, una primera aplicación en vivo sobre su testnet y un Demo Day frente a inversores."
 tag: Recap
 cover: /images/blog/horizen-recap-cover.jpg
