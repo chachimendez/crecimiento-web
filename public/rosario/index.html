@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aleph Rosario</title>
+<meta name="description" content="Aleph Rosario, 27 y 28 de noviembre de 2026. Conferencia y hackathon de Crecimiento en Rosario: quienes construyen tecnología y las empresas e instituciones que mueven una de las economías más potentes del país.">
+<meta name="theme-color" content="#CCB6E7">
+<link rel="canonical" href="https://rosario.crecimiento.build/">
+<meta property="og:url" content="https://rosario.crecimiento.build/">
+<meta property="og:image" content="https://crecimiento.build/images/blog/aleph-rosario-cover.jpg">
+<meta property="og:title" content="Aleph Rosario · 27 y 28 de noviembre">
+<meta property="og:description" content="Conferencia y hackathon de Crecimiento en Rosario. Quienes construyen tecnología y las empresas e instituciones de la región, en la misma sala.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<style>
+  /* ============================================================
+    ALEPH ROSARIO · 27 y 28 de noviembre de 2026
+    Identidad de las placas: crema texturado, lila y tinta.
+    ALEPH en Helvetica Neue light, ROSARIO en bold.
+    Cuartos de círculo lila como única figura.
+     ============================================================ */
+
+  @font-face { font-family: 'InterTight'; font-weight: 400; font-display: swap; src: url('/rosario/assets/fonts/inter-tight-400.woff2') format('woff2'); }
+  @font-face { font-family: 'InterTight'; font-weight: 500; font-display: swap; src: url('/rosario/assets/fonts/inter-tight-500.woff2') format('woff2'); }
+  @font-face { font-family: 'InterTight'; font-weight: 600; font-display: swap; src: url('/rosario/assets/fonts/inter-tight-600.woff2') format('woff2'); }
+  @font-face { font-family: 'InterTight'; font-weight: 700; font-display: swap; src: url('/rosario/assets/fonts/inter-tight-700.woff2') format('woff2'); }
+
+  :root {
+    --crema: #F2F3E1;
+    --lavanda: #CCB6E7;
+    --lavanda-suave: #E4D9F0;
+    --tinta: #161616;
+    --gris: rgba(22, 22, 22, 0.68);
+    --linea: rgba(22, 22, 22, 0.16);
+    --font: 'Helvetica Neue', 'InterTight', Helvetica, Arial, sans-serif;
+    --gutter: max(16px, env(safe-area-inset-left, 0px), env(safe-area-inset-right, 0px), 4vw);
+    --nav-h: 68px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    color-scheme: light;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+  body { background: var(--crema); color: var(--tinta); font-family: var(--font); font-size: 17px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--crema); }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  ::selection { background: var(--lavanda); color: var(--tinta); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* Textura de las placas: trama fina de puntos lila sobre crema */
+  .trama { position: relative; background-color: var(--crema); background-image: radial-gradient(rgba(204, 182, 231, 0.55) 0.75px, transparent 0.9px); background-size: 5px 5px; }
+  .trama--lila { background-color: var(--lavanda); background-image: radial-gradient(rgba(242, 243, 225, 0.35) 0.75px, transparent 0.9px); }
+
+  /* Cuartos de círculo (la figura de la marca) */
+  .q { position: absolute; background: var(--lavanda); pointer-events: none; }
+  .q--tl { border-radius: 100% 0 0 0; }
+  .q--tr { border-radius: 0 100% 0 0; }
+  .q--br { border-radius: 0 0 100% 0; }
+  .q--bl { border-radius: 0 0 0 100%; }
+  .q--tinta { background: var(--tinta); }
+  .q--crema { background: var(--crema); }
+
+  /* Tipos */
+  .marca { font-family: var(--font); text-transform: uppercase; line-height: 0.92; letter-spacing: -0.015em; }
+  .marca .light { display: block; font-weight: 300; }
+  .marca .bold { display: block; font-weight: 700; }
+  .eyebrow { display: inline-block; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 18px; }
+  .eyebrow::before { content: "__"; letter-spacing: 0; margin-right: 8px; color: var(--lavanda); }
+  .titulo { font-family: var(--font); font-weight: 300; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1; letter-spacing: -0.02em; max-width: 20ch; text-wrap: balance; }
+  .titulo b { font-weight: 700; }
+  .seccion__sub { max-width: 54ch; margin-top: 22px; font-size: 1.08rem; color: var(--gris); }
+  .seccion__sub a, .texto a, .faq p a, .agenda__nota a { font-weight: 600; color: var(--tinta); text-decoration-color: var(--lavanda); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+
+  /* Botones */
+  .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 15px 26px; border: 1.5px solid var(--tinta); position: relative; overflow: hidden; isolation: isolate; transition: color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease); white-space: nowrap; cursor: pointer; }
+  .btn::before { content: ''; position: absolute; inset: 0; transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease); z-index: -1; }
+  .btn:hover::before, .btn:focus-visible::before { transform: scaleX(1); }
+  .btn:hover, .btn:focus-visible { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 var(--tinta); outline: none; }
+  .btn--tinta { background: var(--tinta); color: var(--crema); }
+  .btn--tinta::before { background: var(--lavanda); }
+  .btn--tinta:hover, .btn--tinta:focus-visible { color: var(--tinta); }
+  .btn--linea { background: transparent; color: var(--tinta); }
+  .btn--linea::before { background: var(--lavanda); }
+  .btn--lila { background: var(--lavanda); color: var(--tinta); border-color: var(--lavanda); }
+  .btn--lila::before { background: var(--crema); }
+  .btn--lila:hover { box-shadow: 3px 3px 0 var(--lavanda); }
+  .btn--crema { background: var(--crema); color: var(--tinta); }
+  .btn--crema::before { background: var(--lavanda); }
+  .btn--grande { font-size: 0.95rem; padding: 20px 40px; }
+
+  /* Nav */
+  .nav { position: fixed; top: env(safe-area-inset-top, 0px); left: 0; right: 0; height: var(--nav-h); z-index: 50; display: flex; align-items: center; gap: 40px; padding: 0 var(--gutter); background: rgba(242, 243, 225, 0.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--linea); }
+  .nav__logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav__logo .mini { display: inline-grid; grid-template-columns: 1fr 1fr; width: 22px; height: 22px; }
+  .nav__logo .mini i { background: var(--lavanda); }
+  .nav__logo .mini i:nth-child(1) { border-radius: 100% 0 0 0; }
+  .nav__logo .mini i:nth-child(2) { border-radius: 0 100% 0 0; }
+  .nav__logo .mini i:nth-child(3) { border-radius: 0 0 0 100%; }
+  .nav__logo .mini i:nth-child(4) { background: transparent; }
+  .nav__logo span { font-size: 0.98rem; letter-spacing: 0.01em; text-transform: uppercase; }
+  .nav__logo span em { font-style: normal; font-weight: 300; }
+  .nav__logo span b { font-weight: 700; }
+  .nav__logo small { font-size: 0.72rem; color: var(--gris); margin-left: 10px; letter-spacing: 0.06em; }
+  .nav__links { display: flex; gap: 26px; margin-left: auto; }
+  .nav__links a { font-size: 0.85rem; font-weight: 500; text-decoration: none; position: relative; }
+  .nav__links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: var(--lavanda); transform: scaleX(0); transform-origin: left; transition: transform 0.3s var(--ease); }
+  .nav__links a:hover::after { transform: scaleX(1); }
+  .nav__cta { padding: 11px 20px; }
+
+  /* Hero: la placa */
+  /* Proporciones medidas sobre la placa (ancho de la figura = --fw, un cuadrado arriba):
+     dos medios círculos con el lado recto a la izquierda, uno al lado del otro (cada uno 0.5 x 1),
+     debajo un medio círculo con el lado recto arriba (1 x 0.5) y otro igual que se corta con el borde. */
+  /* Botón fijo arriba a la derecha, como en aleph.crecimiento.build */
+  .cta-fija { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 18px); right: max(16px, env(safe-area-inset-right, 0px), 4vw); z-index: 50; padding: 12px 22px; }
+
+  /* Todo entra en una pantalla. La figura es tan alta como el bloque de texto, así su base coincide con la línea de los botones. */
+  .hero { --top: clamp(72px, 10svh, 120px); position: relative; min-height: 100svh; padding: var(--top) var(--gutter) clamp(24px, 4svh, 56px); display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+  .hero__inner { position: relative; z-index: 2; width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: clamp(28px, 5.5vw, 64px); align-items: stretch; }
+  .velas { position: relative; height: 100%; aspect-ratio: 1 / 2.07; max-width: 34vw; z-index: 1; animation: entra 1s var(--ease) 0.1s both; }
+  .velas .q { position: absolute; left: 0; pointer-events: auto; overflow: hidden; }
+  /* proporciones de la placa: un cuadrado arriba (dos medios círculos), media vela y base */
+  .velas .v1 { top: 0; width: 50%; height: 48.31%; border-radius: 0 100% 100% 0 / 0 50% 50% 0; }
+  .velas .v2 { left: 50%; top: 0; width: 50%; height: 48.31%; border-radius: 0 100% 100% 0 / 0 50% 50% 0; }
+  .velas .v3 { top: 50%; width: 100%; height: 24.15%; border-radius: 0 0 50% 50% / 0 0 100% 100%; }
+  .velas .v4 { top: 75.85%; width: 100%; height: 24.15%; border-radius: 0 0 50% 50% / 0 0 100% 100%; }
+  /* Al pasar el cursor, la figura se llena con una foto, como el logo de Aleph March: la misma imagen continúa de pieza en pieza */
+  .velas .q::after { content: ""; position: absolute; left: 0; top: 0; width: var(--vw, 100%); height: var(--vh, 100%); background: url('/rosario/assets/fotos/puente-atardecer.webp') center / cover no-repeat; filter: grayscale(1) contrast(1.1); mix-blend-mode: multiply; opacity: 0; transition: opacity 0.8s var(--ease); }
+  .velas .v1::after { --vw: 200%; --vh: 207%; left: 0; top: 0; }
+  .velas .v2::after { --vw: 200%; --vh: 207%; left: -100%; top: 0; }
+  .velas .v3::after { --vw: 100%; --vh: 414%; left: 0; top: -207%; }
+  .velas .v4::after { --vw: 100%; --vh: 414%; left: 0; top: -314%; }
+  .velas:hover .q::after { opacity: 1; }
+  .hero__texto { animation: entra 1s var(--ease) 0.3s both; max-width: 760px; min-width: 0; }
+  .hero h1.marca { font-size: min(10vw, 17svh, 10.5rem); line-height: 0.9; letter-spacing: -0.03em; }
+  .hero__fecha { margin-top: clamp(16px, 5svh, 72px); font-weight: 300; font-size: min(5.6vw, 8.5svh, 5.8rem); line-height: 1.02; letter-spacing: -0.02em; }
+  .hero__fecha span { display: block; }
+  .hero__lead { max-width: 44ch; margin-top: clamp(14px, 3svh, 32px); font-size: clamp(0.98rem, 1.25vw, 1.15rem); line-height: 1.45; color: var(--gris); }
+  .hero__ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: clamp(16px, 3svh, 32px); }
+  /* esquina inferior derecha de la placa: dos cuartos de círculo, rectos abajo y a la izquierda */
+  .hero .esq, .hero .esq2 { --s: clamp(70px, 11vw, 150px); bottom: 0; width: var(--s); height: var(--s); border-radius: 0 100% 0 0; z-index: 1; }
+  .hero .esq { right: 0; }
+  .hero .esq2 { right: calc(var(--s) * 1.2); }
+  @keyframes entra { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+  /* Secciones */
+  section:not(.hero) { padding: clamp(56px, 7vw, 112px) var(--gutter); position: relative; overflow: hidden; }
+  .seccion__head { max-width: 1400px; margin: 0 auto clamp(32px, 4vw, 56px); position: relative; z-index: 1; }
+  .inner { max-width: 1400px; margin: 0 auto; position: relative; z-index: 1; }
+
+  /* Fotos en duotono */
+  .foto { position: relative; overflow: hidden; background: var(--lavanda); }
+  .foto img, .final__foto img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.15) brightness(1.05); mix-blend-mode: multiply; }
+  .foto--arco { border-radius: 0 50vw 50vw 0 / 0 50% 50% 0; }
+  .sticker { position: absolute; left: 16px; bottom: 16px; background: var(--crema); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; }
+
+  /* Por qué Rosario (bloque negro) */
+  .porque { background: var(--tinta); color: var(--crema); }
+  .porque .eyebrow { color: var(--lavanda); }
+  section.porque .q--deco { left: -4%; top: auto; right: auto; bottom: -12%; width: clamp(160px, 20vw, 320px); height: clamp(160px, 20vw, 320px); border-radius: 0 100% 0 0; opacity: 0.9; }
+  .agro { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 6vw, 96px); align-items: center; max-width: 1400px; margin: 0 auto; position: relative; z-index: 1; }
+  .agro__desc { max-width: 52ch; font-size: 1.04rem; color: rgba(242, 243, 225, 0.72); margin-top: 24px; }
+  .agro__desc p + p { margin-top: 14px; }
+  .agro__desc p:last-child { color: var(--crema); }
+
+  /* Carrusel de fotos de eventos */
+  .carrusel { position: relative; aspect-ratio: 4 / 3; max-width: 100%; overflow: hidden; background: #2a2a2a; border: 1.5px solid rgba(242, 243, 225, 0.2); }
+  .carrusel__item { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity 1.1s var(--ease); }
+  .carrusel__item img { width: 100%; height: 100%; object-fit: cover; display: block; transform: scale(1.06); transition: transform 7s linear; }
+  .carrusel__item.is-on { opacity: 1; z-index: 1; }
+  .carrusel__item.is-on img { transform: scale(1); }
+  .carrusel__item figcaption { position: absolute; left: 16px; bottom: 16px; background: var(--crema); color: var(--tinta); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 6px 12px; }
+  .carrusel__dots { position: absolute; right: 16px; bottom: 18px; z-index: 2; display: flex; gap: 6px; }
+  .carrusel__dots button { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--crema); background: transparent; padding: 0; cursor: pointer; transition: background 0.3s; }
+  .carrusel__dots button[aria-selected="true"] { background: var(--lavanda); border-color: var(--lavanda); }
+  .carrusel__dots button:focus-visible { outline: 2px solid var(--lavanda); outline-offset: 2px; }
+
+  /* Dos días */
+  .dias { display: grid; grid-template-columns: 1fr 1fr; max-width: 1400px; margin: 0 auto; border: 1.5px solid var(--tinta); position: relative; z-index: 1; background: var(--crema); }
+  .dia { padding: clamp(28px, 4vw, 56px); background: var(--crema); min-height: 460px; display: flex; flex-direction: column; justify-content: flex-end; min-width: 0; position: relative; overflow: hidden; transition: background 0.5s var(--ease); }
+  .dia + .dia { border-left: 1.5px solid var(--tinta); }
+  .dia--lila { background: var(--lavanda); }
+  .dia .q { width: 120px; height: 120px; right: -1px; top: -1px; transform-origin: top right; transition: transform 0.8s var(--ease); }
+  .dia > * { position: relative; z-index: 1; }
+  .dia .q { position: absolute; z-index: 0; }
+  /* Animación sutil: al pasar el cursor el cuarto de círculo crece y el día se desplaza apenas */
+  .dia:hover .q { transform: scale(2.6); }
+  .dia__fecha, .dia h3 { transition: transform 0.6s var(--ease); }
+  .dia:hover .dia__fecha { transform: translateX(6px); }
+  .dia h3 { font-weight: 700; font-size: clamp(1.4rem, 2.4vw, 2.1rem); line-height: 1.05; margin: 18px 0 12px; letter-spacing: 0.01em; text-transform: uppercase; }
+  .dia p { max-width: 44ch; color: var(--gris); }
+  .dia--lila p { color: var(--tinta); }
+  .dia__fecha { font-weight: 300; font-size: clamp(4rem, 8vw, 7rem); line-height: 0.85; margin-bottom: auto; letter-spacing: -0.04em; }
+  .dia__fecha span { display: block; font-size: 0.17em; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; margin-bottom: 12px; }
+  .dia__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+  .dia__tags span { border: 1.5px solid var(--tinta); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 10px; }
+  .dia__btn { align-self: flex-start; margin-top: 24px; }
+
+  /* Agenda */
+  .agenda { max-width: 1400px; margin: 0 auto; border-top: 1.5px solid var(--tinta); position: relative; z-index: 1; }
+  .agenda__head, .agenda__row { display: grid; grid-template-columns: 110px 1fr 1.7fr; gap: 18px; align-items: baseline; padding: 8px 0; }
+  .agenda__k { font-size: clamp(0.95rem, 1.2vw, 1.1rem); }
+  .agenda__q { font-size: 0.9rem; }
+  #agenda { padding-block: clamp(48px, 6vw, 88px); }
+  #agenda .seccion__head { margin-bottom: 28px; }
+  .agenda__head { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1.5px solid var(--tinta); color: var(--gris); }
+  .agenda__row { border-bottom: 1px solid var(--linea); transition: background 0.25s, padding 0.3s var(--ease); min-width: 0; }
+  .agenda__row:hover { background: var(--lavanda-suave); padding-left: 12px; padding-right: 12px; }
+  .agenda__row--marco { color: var(--gris); }
+  .agenda__n { font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+  .agenda__k { font-weight: 700; font-size: clamp(1.1rem, 1.6vw, 1.45rem); line-height: 1.1; letter-spacing: -0.01em; }
+  .agenda__row--marco .agenda__k { font-weight: 400; }
+  .agenda__q { font-size: 1.02rem; min-width: 0; color: var(--gris); }
+  #agenda .titulo { text-transform: uppercase; letter-spacing: -0.01em; }
+  .agenda__nota { max-width: 1400px; margin: 24px auto 0; font-size: 1rem; color: var(--gris); position: relative; z-index: 1; }
+
+  /* Hackathon (lila) */
+  .hack .q--deco { right: -10%; bottom: -16%; width: clamp(240px, 36vw, 560px); height: clamp(240px, 36vw, 560px); background: var(--crema); opacity: 0.4; border-radius: 100% 0 0 0; }
+  .hack .seccion__sub { color: var(--tinta); }
+  .pasos { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1400px; margin: clamp(40px, 6vw, 72px) auto 0; border: 1.5px solid var(--tinta); position: relative; z-index: 1; }
+  .paso { background: var(--crema); padding: clamp(28px, 3.4vw, 48px); min-height: 320px; display: flex; flex-direction: column; min-width: 0; }
+  .paso + .paso { border-left: 1.5px solid var(--tinta); }
+  .paso--tinta { background: var(--tinta); color: var(--crema); }
+  .paso__n { font-weight: 300; font-size: clamp(3rem, 5vw, 4.5rem); line-height: 1; margin-bottom: 48px; letter-spacing: -0.04em; color: var(--lavanda); }
+  .paso--tinta .paso__n { color: var(--lavanda); }
+  .paso h3 { font-weight: 700; font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.01em; }
+  .paso p:last-child { color: var(--gris); }
+  .paso--tinta p:last-child { color: rgba(242, 243, 225, 0.8); }
+  .hack__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(28px, 4vw, 44px); position: relative; z-index: 1; }
+  .sponsor-box { margin: clamp(28px, 4vw, 44px) auto 0; max-width: 1400px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1.5px dashed var(--tinta); padding: 22px 26px; background: rgba(242, 243, 225, 0.45); position: relative; z-index: 1; }
+  .sponsor-box p { max-width: 62ch; font-size: 1.03rem; }
+
+  /* Speakers */
+  .quienes { max-width: 1400px; margin: 0 auto; position: relative; z-index: 1; }
+  .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; max-width: 980px; }
+  .chips li { border: 1.5px solid var(--tinta); border-radius: 999px; padding: 8px 18px; font-weight: 500; font-size: 0.95rem; transition: background 0.25s, transform 0.25s var(--ease); }
+  .chips li small { color: var(--gris); font-size: 0.82em; margin-left: 6px; }
+  .chips li:hover { background: var(--lavanda); transform: rotate(-2deg) scale(1.04); }
+  .placas { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 28px); margin-top: clamp(40px, 6vw, 72px); max-width: 1400px; margin-inline: auto; position: relative; z-index: 1; }
+  .placa { position: relative; overflow: hidden; border: 1.5px solid var(--tinta); aspect-ratio: 16 / 9; display: grid; grid-template-columns: 38% 1fr; }
+  .placa__foto { position: relative; background: var(--lavanda); border-radius: 0 50vw 50vw 0 / 0 50% 50% 0; }
+  .placa__foto::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 14%; background: var(--lavanda-suave); }
+  .placa__txt { padding: clamp(14px, 1.6vw, 24px) clamp(14px, 1.8vw, 28px); display: flex; flex-direction: column; justify-content: space-between; min-width: 0; }
+  .placa__txt .marca { font-size: clamp(1.1rem, 1.9vw, 1.9rem); }
+  .placa__nombre { font-style: italic; font-weight: 300; font-size: clamp(1rem, 1.5vw, 1.4rem); line-height: 1.1; letter-spacing: -0.01em; }
+  .placa__nombre small { display: block; font-style: normal; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris); margin-top: 6px; font-weight: 500; }
+  .placa .q { width: 15%; aspect-ratio: 1; height: auto; right: 0; bottom: 0; }
+  .placa .q + .q { right: 16.5%; }
+  .placa__nombre { padding-right: 34%; }
+  .placas__nota { max-width: 1400px; margin: 24px auto 0; color: var(--gris); font-size: 1rem; position: relative; z-index: 1; }
+
+  /* Speakers: grilla de fotos cuadradas; al pasar el cursor, tarjeta negra con nombre y organización (formato de aleph.crecimiento.build) */
+  .grilla-speakers { list-style: none; max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(12px, 1.6vw, 24px); position: relative; z-index: 1; }
+  .speaker { position: relative; aspect-ratio: 1; overflow: hidden; background: var(--lavanda); }
+  .speaker img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.8s var(--ease); }
+  .speaker__card { position: absolute; inset: 0; background: var(--tinta); color: var(--crema); padding: clamp(14px, 1.6vw, 24px); display: flex; flex-direction: column; justify-content: space-between; opacity: 0; transition: opacity 0.35s var(--ease); }
+  .speaker__card b { font-style: italic; font-weight: 300; font-size: clamp(1.1rem, 1.9vw, 1.9rem); line-height: 1.05; letter-spacing: -0.01em; }
+  .speaker__card span { font-size: 0.9rem; font-weight: 400; }
+  .speaker:hover .speaker__card, .speaker:focus-within .speaker__card { opacity: 1; }
+  .speaker--vacio { display: grid; place-items: center; color: var(--tinta); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 12px; }
+  @media (max-width: 1100px) { .grilla-speakers { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 860px) { .grilla-speakers { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .grilla-speakers { grid-template-columns: repeat(2, 1fr); } }
+
+  /* Aparición al scrollear (solo con JS; sin JS todo está visible) */
+  .js .revela { opacity: 0; transform: translateY(36px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+  .js .revela.is-in { opacity: 1; transform: none; }
+
+  /* Crecimiento (tinta) */
+  .global { background: var(--tinta); color: var(--crema); }
+  .global .q--deco { right: -4%; top: -4%; width: clamp(160px, 24vw, 360px); height: clamp(160px, 24vw, 360px); border-radius: 0 0 0 100%; opacity: 0.9; }
+  .global__logo { width: clamp(180px, 20vw, 280px); height: auto; margin-bottom: 40px; }
+  .global__titulo { font-weight: 300; font-size: clamp(1.7rem, 3.6vw, 3.2rem); line-height: 1.08; max-width: 26ch; text-wrap: balance; letter-spacing: -0.02em; }
+  .global__titulo b { font-weight: 700; }
+  .global__texto { max-width: 70ch; margin-top: 24px; font-size: 1.05rem; color: rgba(242, 243, 225, 0.82); }
+  .global__texto p + p { margin-top: 14px; }
+  .global__stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: clamp(32px, 4vw, 56px) 0; border-top: 1px solid rgba(204, 182, 231, 0.35); }
+  .global__stats p { padding-top: 24px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .global__stats p + p { padding-left: 24px; border-left: 1px solid rgba(204, 182, 231, 0.35); }
+  .global__stats b { font-weight: 300; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: 1; color: var(--lavanda); font-variant-numeric: tabular-nums; letter-spacing: -0.04em; }
+  .global__stats span { font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .global__cta { text-align: center; }
+
+  /* FAQs */
+  .faqs__lista { max-width: 1000px; margin: 0 auto; position: relative; z-index: 1; border-top: 1.5px solid var(--tinta); }
+  .faqs .seccion__head { max-width: 1000px; }
+  .faq { border-bottom: 1px solid var(--linea); }
+  .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 22px 8px; font-weight: 700; font-size: clamp(1.02rem, 1.5vw, 1.3rem); letter-spacing: -0.01em; transition: background 0.25s, padding 0.3s var(--ease); }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; flex-shrink: 0; width: 36px; height: 36px; display: grid; place-items: center; border: 1.5px solid var(--tinta); border-radius: 50%; font-weight: 300; font-size: 1.5rem; transition: transform 0.35s var(--ease), background 0.25s; }
+  .faq summary:hover { background: var(--lavanda-suave); padding-left: 16px; }
+  .faq summary:focus-visible { outline: 2px solid var(--tinta); outline-offset: -2px; }
+  .faq[open] summary::after { transform: rotate(45deg); background: var(--lavanda); }
+  .faq p { padding: 0 8px 26px; max-width: 70ch; font-size: 1.03rem; color: var(--gris); }
+  .faq__ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+  .faq p + .faq__ctas { margin-top: -8px; }
+
+  /* Final */
+  .final { position: relative; overflow: hidden; background: var(--lavanda); min-height: 64svh; display: grid; place-items: center; text-align: center; border-top: 1.5px solid var(--tinta); padding-block: clamp(48px, 8vh, 96px); }
+  .final__foto { position: absolute; inset: 0; background: var(--lavanda); }
+  .final__foto img { opacity: 0.5; }
+  .final__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+  .final__titulo { font-weight: 300; font-size: clamp(2.6rem, 8.5vw, 8.5rem); line-height: 0.92; letter-spacing: -0.03em; text-wrap: balance; }
+  .final__titulo b { font-weight: 700; }
+  .final__sub { margin: clamp(16px, 3vh, 28px) 0 clamp(20px, 4vh, 36px); font-weight: 500; font-size: 1rem; background: var(--crema); padding: 8px 16px; letter-spacing: 0.02em; }
+  .final__ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+  /* Pie */
+  .pie { background: var(--tinta); color: var(--crema); padding: 36px var(--gutter) calc(24px + env(safe-area-inset-bottom, 0px)); }
+  .pie__fila { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; max-width: 1400px; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px solid rgba(242, 243, 225, 0.15); }
+  .pie__logo img { height: 26px; width: auto; }
+  .pie__links { display: flex; gap: 24px; flex-wrap: wrap; }
+  .pie__links a { text-decoration: none; font-size: 0.9rem; }
+  .pie__links a:hover { color: var(--lavanda); }
+  .pie__copy { max-width: 1400px; margin: 10px auto 0; font-size: 0.75rem; opacity: 0.6; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+  .pie__copy b { user-select: all; font-weight: 500; }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .global__stats { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
+    .global__stats p:nth-child(3) { padding-left: 0; border-left: 0; }
+    .placas { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 860px) {
+    :root { --nav-h: 60px; }
+    .nav__links { display: none; }
+    .nav { justify-content: space-between; }
+    .nav__logo small { display: none; }
+    .hero { min-height: auto; --top: calc(env(safe-area-inset-top, 0px) + 84px); }
+    .hero__inner { grid-template-columns: 1fr; row-gap: 28px; }
+    .velas { height: auto; width: 44vw; max-width: 44vw; aspect-ratio: 1 / 1.55; overflow: hidden; }
+    .cta-fija { padding: 10px 16px; font-size: 0.72rem; }
+    .hero__fecha { margin-top: 20px; }
+    .hero .esq, .hero .esq2 { display: none; }
+    .agro, .dias { grid-template-columns: 1fr; }
+    .dia + .dia { border-left: 0; border-top: 1.5px solid var(--tinta); }
+    .dia { min-height: 320px; }
+    .dia .q { width: 80px; height: 80px; }
+    .agenda__head { display: none; }
+    .agenda__row { grid-template-columns: 1fr; gap: 6px; }
+    .pasos { grid-template-columns: 1fr; }
+    .paso { min-height: 0; }
+    .paso + .paso { border-left: 0; border-top: 1.5px solid var(--tinta); }
+    .paso__n { margin-bottom: 24px; }
+    .placas { grid-template-columns: 1fr; }
+    .sponsor-box { flex-direction: column; align-items: flex-start; }
+    .final { min-height: 0; }
+    .final__titulo { font-size: clamp(2.4rem, 11vw, 4rem); }
+  }
+  @media (max-width: 560px) {
+    .btn--grande { padding: 18px 30px; }
+    .global__stats { grid-template-columns: 1fr; }
+    .global__stats p + p { padding-left: 0; border-left: 0; }
+    .datos__inner { gap: 8px 24px; font-size: 0.74rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+<a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta cta-fija">Reservá tu lugar</a>
+
+<section class="hero trama" id="inicio">
+  <span class="q esq" aria-hidden="true"></span>
+  <span class="q esq2" aria-hidden="true"></span>
+  <div class="hero__inner">
+    <div class="velas" aria-hidden="true">
+      <span class="q v1"></span><span class="q v2"></span><span class="q v3"></span><span class="q v4"></span>
+    </div>
+    <div class="hero__texto">
+      <h1 class="marca"><span class="light">Aleph</span><span class="bold">Rosario</span></h1>
+      <p class="hero__fecha"><span>27—28</span><span>Noviembre</span></p>
+      <p class="hero__lead">Dos días que reúnen a quienes construyen tecnología y a las empresas e instituciones de Rosario: una conferencia el viernes y un hackathon el sábado.</p>
+      <div class="hero__ctas">
+        <a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta">Reservá tu lugar en la conferencia</a>
+        <a href="#hackathon" class="btn btn--linea">Sumate al hackathon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="global porque" id="rosario">
+  <div class="agro">
+    <div class="revela">
+      <h2 class="titulo">La red de <b>Crecimiento en todo el país</b></h2>
+      <div class="agro__desc">
+        <p>Durante dos años construimos desde Buenos Aires una red de devs, startups, empresas e instituciones comprometidas con convertir a Argentina en el mejor lugar para construir. El próximo paso es que esa red crezca y se nutra en todo el país.</p>
+        <p>Rosario reúne al principal polo agroindustrial del país, un cordón industrial histórico y universidades de primer nivel. Sobre esa economía, una nueva capa se encuentra en crecimiento: empresas referentes en agtech, biotech, IA y fintech, dos mercados de capitales que ya trabajan en la tokenización y una comunidad de desarrolladores en expansión. Aleph Rosario pone en la misma sala a quienes construyen esa tecnología y a quienes mueven una de las economías más potentes del país.</p>
+      </div>
+    </div>
+    <div class="carrusel revela" id="carrusel" aria-label="Fotos de eventos de Crecimiento">
+      <figure class="carrusel__item is-on"><img src="/rosario/assets/eventos/popup-cover.jpg" alt="Sala del primer Aleph, vista desde el fondo" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/regday-cover.jpg" alt="Escenario de Regulation Day" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/aleph-2.jpg" alt="Charla en el escenario de Aleph" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/aleph24-6.jpg" alt="Público en el primer Aleph" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/ldac-2.jpg" alt="Escenario de la LATAM Digital Assets Conf" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/hack-3.jpg" alt="Equipos trabajando en el Aleph Hackathon" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/regday-3.jpg" alt="Panel de Regulation Day" loading="lazy"></figure>
+      <figure class="carrusel__item"><img src="/rosario/assets/eventos/ciudad-7.jpg" alt="Foto grupal del primer Aleph" loading="lazy"></figure>
+      <div class="carrusel__dots" role="tablist" aria-label="Fotos"></div>
+    </div>
+  </div>
+</section>
+
+<section class="trama" id="dias">
+  <div class="seccion__head revela">
+    <h2 class="titulo">Dos días, <b>una ciudad</b></h2>
+  </div>
+  <div class="dias revela">
+    <article class="dia">
+      <span class="q q--bl" aria-hidden="true"></span>
+      <p class="dia__fecha"><span>Viernes · Noviembre</span>27</p>
+      <h3>Conferencia</h3>
+      <p>Quienes construyen tecnología y quienes conducen la industria, en el mismo escenario. Siete paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial, educación y regulación.</p>
+      <div class="dia__tags"><span>7 paneles</span></div>
+      <a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta dia__btn">Reservá tu lugar en la conferencia</a>
+    </article>
+    <article class="dia dia--lila">
+      <span class="q q--bl q--crema" aria-hidden="true"></span>
+      <p class="dia__fecha"><span>Sábado · Noviembre</span>28</p>
+      <h3>Hackathon</h3>
+      <p>Tecnología aplicada al agro. Un día para construir sobre desafíos reales planteados por empresas de la región, con mentores técnicos y presentación final ante el jurado.</p>
+      <div class="dia__tags"><span>Presencial &amp; híbrido</span><span>+100 hackers</span></div>
+      <a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--tinta dia__btn">Inscribite al hackathon</a>
+    </article>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="seccion__head revela">
+    <h2 class="titulo"><b>Agenda de la conferencia</b></h2>
+  </div>
+  <div class="agenda revela">
+    <div class="agenda__head" aria-hidden="true"><span>Horario</span><span>Panel</span><span>Temario</span></div>
+    <div class="agenda__row agenda__row--marco"><span class="agenda__n">12:00</span><span class="agenda__k">Acreditación</span><span class="agenda__q"></span></div>
+    <div class="agenda__row agenda__row--marco"><span class="agenda__n">Apertura</span><span class="agenda__k">Crecimiento llega a Rosario</span><span class="agenda__q">Palabras de apertura.</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 01</span><span class="agenda__k">Agtech</span><span class="agenda__q">¿Qué necesita el agro de quienes construyen tecnología?</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 02</span><span class="agenda__k">Biotech</span><span class="agenda__q">Ciencia rosarina que se exporta.</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 03</span><span class="agenda__k">Fintech</span><span class="agenda__q">La infraestructura financiera que se construye en Rosario.</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 04</span><span class="agenda__k">Tokenización</span><span class="agenda__q">Tokenización, de la prueba piloto a la escala.</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 05</span><span class="agenda__k">IA y startups</span><span class="agenda__q">Emprender en IA.</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 06</span><span class="agenda__k">Educación</span><span class="agenda__q">¿Cómo formamos a los emprendedores que la ciudad necesita?</span></div>
+    <div class="agenda__row"><span class="agenda__n">Panel 07</span><span class="agenda__k">Gobierno y regulación</span><span class="agenda__q">Marcos regulatorios para la innovación.</span></div>
+    <div class="agenda__row agenda__row--marco"><span class="agenda__n">Cierre</span><span class="agenda__k">Lanzamiento del hackathon</span><span class="agenda__q">Las empresas que traen cada desafío suben al escenario y presentan los tracks del sábado.</span></div>
+  </div>
+</section>
+
+<section class="hack trama trama--lila" id="hackathon">
+  <span class="q q--deco" aria-hidden="true"></span>
+  <div class="seccion__head revela" style="margin-bottom:0">
+    <h2 class="titulo">Tecnología <b>aplicada al agro</b></h2>
+  </div>
+  <ol class="pasos revela">
+    <li class="paso"><p class="paso__n">01</p><h3>Elegí tu track</h3><p>Los tracks se anuncian antes del evento. Cada uno plantea un desafío real de una empresa del agro. Te inscribís de forma individual o con tu equipo, de hasta cuatro integrantes.</p></li>
+    <li class="paso paso--tinta"><p class="paso__n">02</p><h3>Construí con tu equipo</h3><p>Mentores técnicos acompañan a los equipos durante todo el día. Al menos una persona del equipo en la sede, el resto puede sumarse de forma remota. Al final, cada equipo presenta lo que hizo ante el jurado.</p></li>
+    <li class="paso"><p class="paso__n">03</p><h3>Lo que construyas es tuyo</h3><p>Los proyectos ganadores siguen con mentoría y contacto directo con la empresa que planteó el desafío. Es el primer contacto entre las empresas y quienes van a construir sus soluciones.</p></li>
+  </ol>
+  <div class="inner">
+    <div class="hack__ctas">
+      <a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--tinta btn--grande">Inscribite al hackathon</a>
+      <a href="https://alephhackathon.crecimiento.build/rosario#tracks" target="_blank" rel="noopener" class="btn btn--crema">Ver los tracks</a>
+    </div>
+  </div>
+</section>
+
+<section class="trama" id="speakers">
+  <div class="seccion__head revela speakers__head">
+    <h2 class="titulo">Conocé a los <b>speakers</b></h2>
+  </div>
+  <ul class="grilla-speakers revela" id="grilla-speakers">
+    <!-- Cada speaker: foto cuadrada + nombre + organización. Se cargan desde SPEAKERS en el script del final. -->
+  </ul>
+</section>
+
+<section class="global" id="crecimiento">
+  <span class="q q--deco" aria-hidden="true"></span>
+  <div class="inner">
+    <img src="/rosario/assets/img/crecimiento-white.svg" alt="Crecimiento" class="global__logo" width="2146" height="258">
+    <h2 class="global__titulo">Crecimiento es una fundación que impulsa al ecosistema tech argentino para posicionar al país como <b>hub global de innovación.</b></h2>
+    <div class="global__texto">
+      <p>Trabaja un sistema de programas que acompaña a startups y founders desde el hackathon hasta la aceleración, conectándolos con inversores y partners internacionales; y la articulación entre sector público y privado para un marco regulatorio a la altura del ritmo del ecosistema.</p>
+      <p>En dos años corrió más de 200 programas con más de 100 partners. Por su ecosistema circularon más de 15 mil personas y 1.000 startups, 200 aceleradas.</p>
+    </div>
+    <div class="global__stats">
+      <p><b>+15.000</b><span>Personas en su ecosistema</span></p>
+      <p><b>+200</b><span>Programas en dos años</span></p>
+      <p><b>+1.000</b><span>Startups en el ecosistema</span></p>
+      <p><b>+100</b><span>Partners</span></p>
+    </div>
+    <p class="global__cta"><a href="https://crecimiento.build" target="_blank" rel="noopener" class="btn btn--lila">Conocé Crecimiento</a></p>
+  </div>
+</section>
+
+<section class="faqs trama" id="faqs">
+  <div class="seccion__head">
+    <span class="eyebrow">Preguntas frecuentes</span>
+    <h2 class="titulo">Lo que nos <b>preguntan</b></h2>
+  </div>
+  <div class="faqs__lista">
+    <details class="faq">
+      <summary>¿Qué es Aleph Rosario?</summary>
+      <p>Aleph Rosario es la primera edición de Aleph fuera de Buenos Aires. El viernes 27 y el sábado 28 de noviembre reúne en Rosario a quienes construyen tecnología con las empresas e instituciones que mueven una de las economías más potentes del país. El viernes, una conferencia de siete paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial, educación y regulación. El sábado, un hackathon de tecnología aplicada al agro, con desafíos reales planteados por empresas de la región.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Cómo me inscribo?</summary>
+      <p>La conferencia y el hackathon tienen inscripciones independientes, con solicitud previa.</p>
+      <p class="faq__ctas"><a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta">Conferencia</a><a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--linea">Hackathon</a></p>
+    </details>
+    <details class="faq">
+      <summary>¿Quién puede participar?</summary>
+      <p>Cualquier persona interesada en tecnología e innovación. Esperamos a empresas del agro, bancos, fintechs y mercados de Rosario, biotech y agtech, universidades, startups, comunidades de builders, exchanges, tokenizadores, reguladores y protocolos.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Dónde es?</summary>
+      <p>En las instalaciones de la Universidad Abierta Interamericana, Av. Carlos Pellegrini 1620, Rosario.</p>
+    </details>
+    <details class="faq">
+      <summary>¿Puedo participar del hackathon sin equipo?</summary>
+      <p>Sí. Te inscribís de forma individual, elegís el track en el que querés trabajar y podés armar equipo en el evento. Los equipos son de hasta cuatro integrantes, con al menos una persona en la sede.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="final__foto" aria-hidden="true"><img src="/rosario/assets/fotos/puente-atardecer.webp" alt="" width="1600" height="900"></div>
+  <div class="final__inner">
+    <h2 class="final__titulo">Nos vemos <b>en Rosario.</b></h2>
+    <p class="final__sub">Viernes 27 y sábado 28 de noviembre</p>
+    <div class="final__ctas">
+      <a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta btn--grande">Inscribite a la conferencia</a>
+      <a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--crema">Sumate al hackathon</a>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="pie__fila">
+    <a class="pie__logo" href="https://crecimiento.build" target="_blank" rel="noopener"><img src="/rosario/assets/img/crecimiento-white.svg" alt="Crecimiento" width="2146" height="258"></a>
+    <nav class="pie__links" aria-label="Redes">
+      <a href="https://x.com/crecimientoar" target="_blank" rel="noopener">X</a>
+      <a href="https://www.instagram.com/crecimientoar/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/crecimientobuild/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://luma.com/crecimiento" target="_blank" rel="noopener">Luma</a>
+      <a href="https://alephhackathon.crecimiento.build/" target="_blank" rel="noopener">Aleph Hackathon</a>
+    </nav>
+  </div>
+  <p class="pie__copy"><span>© 2026 Crecimiento · Aleph Rosario</span><span>Contacto <b>info@crecimiento.build</b></span></p>
+</footer>
+
+<script>
+  // SPEAKERS: una entrada por persona. foto = ruta en assets/speakers/ (cuadrada, 600x600 alcanza). Sin foto, muestra la tarjeta lila.
+  var SPEAKERS = [
+    { nombre: "Speaker por anunciar", org: "Agtech", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Biotech", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Fintech", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Tokenización", foto: "" },
+    { nombre: "Speaker por anunciar", org: "IA y startups", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Educación", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Gobierno y regulación", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Agtech", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Fintech", foto: "" },
+    { nombre: "Speaker por anunciar", org: "Tokenización", foto: "" }
+  ];
+  (function () {
+    var ul = document.getElementById('grilla-speakers');
+    if (!ul) return;
+    SPEAKERS.forEach(function (s) {
+      var li = document.createElement('li');
+      li.className = 'speaker' + (s.foto ? '' : ' speaker--vacio');
+      if (s.foto) {
+        var img = document.createElement('img'); img.src = s.foto; img.alt = s.nombre; img.loading = 'lazy'; li.appendChild(img);
+        var card = document.createElement('div'); card.className = 'speaker__card';
+        var b = document.createElement('b'); b.textContent = s.nombre; var sp = document.createElement('span'); sp.textContent = s.org;
+        card.appendChild(b); card.appendChild(sp); li.appendChild(card);
+      } else {
+        li.textContent = s.org;
+      }
+      ul.appendChild(li);
+    });
+  })();
+  (function () {
+    // Aparición al scrollear
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) return;
+    document.documentElement.classList.add('js');
+    var els = document.querySelectorAll('.revela');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    els.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.9) el.classList.add('is-in'); else io.observe(el);
+    });
+  })();
+  (function () {
+    var c = document.getElementById('carrusel');
+    if (!c) return;
+    var items = Array.prototype.slice.call(c.querySelectorAll('.carrusel__item'));
+    var dots = c.querySelector('.carrusel__dots');
+    var i = 0, timer = null, paused = false;
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    items.forEach(function (_, k) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.setAttribute('role', 'tab'); b.setAttribute('aria-label', 'Foto ' + (k + 1));
+      b.addEventListener('click', function () { show(k); restart(); });
+      dots.appendChild(b);
+    });
+    function show(k) {
+      i = (k + items.length) % items.length;
+      items.forEach(function (el, j) { el.classList.toggle('is-on', j === i); });
+      Array.prototype.forEach.call(dots.children, function (d, j) { d.setAttribute('aria-selected', j === i ? 'true' : 'false'); });
+    }
+    function restart() { if (timer) clearInterval(timer); if (!reduce) timer = setInterval(function () { if (!paused) show(i + 1); }, 3800); }
+    c.addEventListener('mouseenter', function () { paused = true; });
+    c.addEventListener('mouseleave', function () { paused = false; });
+    show(0); restart();
+  })();
+</script>
+</body>
+</html>

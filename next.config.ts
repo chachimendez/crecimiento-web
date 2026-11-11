@@ -10,8 +10,16 @@ const nextConfig: NextConfig = {
   },
   async rewrites() {
     return [
+      {
+        source: "/",
+        has: [{ type: "host", value: "rosario.crecimiento.build" }],
+        destination: "/rosario/index.html",
+      },
       { source: "/admin", destination: "/admin/index.html" },
       { source: "/admin/", destination: "/admin/index.html" },
+      // Aleph Rosario (sitio estático en public/rosario)
+      { source: "/rosario", destination: "/rosario/index.html" },
+      { source: "/rosario/", destination: "/rosario/index.html" },
     ];
   },
 };
