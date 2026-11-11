@@ -6,9 +6,9 @@
 <title>Aleph Rosario</title>
 <meta name="description" content="Aleph Rosario, 27 y 28 de noviembre de 2026. Conferencia y hackathon de Crecimiento en Rosario: quienes construyen tecnología y las empresas e instituciones que mueven una de las economías más potentes del país.">
 <meta name="theme-color" content="#CCB6E7">
-<link rel="canonical" href="https://rosario.crecimiento.build/">
 <meta property="og:url" content="https://rosario.crecimiento.build/">
 <meta property="og:image" content="https://crecimiento.build/images/blog/aleph-rosario-cover.jpg">
+<link rel="canonical" href="https://rosario.crecimiento.build/">
 <meta property="og:title" content="Aleph Rosario · 27 y 28 de noviembre">
 <meta property="og:description" content="Conferencia y hackathon de Crecimiento en Rosario. Quienes construyen tecnología y las empresas e instituciones de la región, en la misma sala.">
 <meta property="og:type" content="website">
@@ -71,7 +71,7 @@
   .titulo { font-family: var(--font); font-weight: 300; font-size: clamp(2.2rem, 5vw, 4.4rem); line-height: 1; letter-spacing: -0.02em; max-width: 20ch; text-wrap: balance; }
   .titulo b { font-weight: 700; }
   .seccion__sub { max-width: 54ch; margin-top: 22px; font-size: 1.08rem; color: var(--gris); }
-  .seccion__sub a, .texto a, .faq p a, .agenda__nota a { font-weight: 600; color: var(--tinta); text-decoration-color: var(--lavanda); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+  .seccion__sub a, .texto a, .faq p a:not(.btn), .agenda__nota a { font-weight: 600; color: var(--tinta); text-decoration-color: var(--lavanda); text-decoration-thickness: 3px; text-underline-offset: 3px; }
 
   /* Botones */
   .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 15px 26px; border: 1.5px solid var(--tinta); position: relative; overflow: hidden; isolation: isolate; transition: color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease); white-space: nowrap; cursor: pointer; }
@@ -331,7 +331,10 @@
     .hero { min-height: auto; --top: calc(env(safe-area-inset-top, 0px) + 84px); }
     .hero__inner { grid-template-columns: 1fr; row-gap: 28px; }
     .velas { height: auto; width: 44vw; max-width: 44vw; aspect-ratio: 1 / 1.55; overflow: hidden; }
-    .cta-fija { padding: 10px 16px; font-size: 0.72rem; }
+    /* En mobile el CTA fijo pasa a barra inferior y se esconde mientras la portada (que ya tiene el botón) está en pantalla */
+    .cta-fija { top: auto; bottom: calc(env(safe-area-inset-bottom, 0px) + 14px); left: 16px; right: 16px; justify-content: center; padding: 16px 20px; font-size: 0.78rem; border-color: var(--lavanda); box-shadow: 0 8px 24px rgba(22, 22, 22, 0.18); transition: transform 0.45s var(--ease), opacity 0.45s var(--ease); }
+    .cta-fija.cta-oculta { transform: translateY(160%); opacity: 0; pointer-events: none; }
+    .pie { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
     .hero__fecha { margin-top: 20px; }
     .hero .esq, .hero .esq2 { display: none; }
     .agro, .dias { grid-template-columns: 1fr; }
@@ -490,7 +493,6 @@
       <p><b>+1.000</b><span>Startups en el ecosistema</span></p>
       <p><b>+100</b><span>Partners</span></p>
     </div>
-    <p class="global__cta"><a href="https://crecimiento.build" target="_blank" rel="noopener" class="btn btn--lila">Conocé Crecimiento</a></p>
   </div>
 </section>
 
@@ -547,22 +549,31 @@
       <a href="https://alephhackathon.crecimiento.build/" target="_blank" rel="noopener">Aleph Hackathon</a>
     </nav>
   </div>
-  <p class="pie__copy"><span>© 2026 Crecimiento · Aleph Rosario</span><span>Contacto <b>info@crecimiento.build</b></span></p>
+  <p class="pie__copy"><span>© 2026 Crecimiento · Aleph Rosario</span></p>
 </footer>
 
 <script>
   // SPEAKERS: una entrada por persona. foto = ruta en assets/speakers/ (cuadrada, 600x600 alcanza). Sin foto, muestra la tarjeta lila.
   var SPEAKERS = [
-    { nombre: "Speaker por anunciar", org: "Agtech", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Biotech", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Fintech", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Tokenización", foto: "" },
-    { nombre: "Speaker por anunciar", org: "IA y startups", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Educación", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Gobierno y regulación", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Agtech", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Fintech", foto: "" },
-    { nombre: "Speaker por anunciar", org: "Tokenización", foto: "" }
+    { nombre: "Iván Regali", org: "DeepAgro", foto: "/rosario/assets/speakers/ivan-regali.jpg" },
+    { nombre: "Lucas Lieber", org: "BioHeuris", foto: "/rosario/assets/speakers/lucas-lieber.jpg" },
+    { nombre: "Fernán Gizzi", org: "Agrosintex", foto: "/rosario/assets/speakers/fernan-gizzi.jpg" },
+    { nombre: "Ingrid Drago", org: "Bolsa de Comercio de Rosario", foto: "/rosario/assets/speakers/ingrid-drago.jpg" },
+    { nombre: "Luisina Gala Golosetti", org: "Rosario Innovation Hub (El Hub)", foto: "/rosario/assets/speakers/luisina-golosetti.jpg" },
+    { nombre: "Julia Irigoitia", org: "Poliedro", foto: "/rosario/assets/speakers/julia-irigoitia.jpg" },
+    { nombre: "Juan Sebastián Heredia Querro", org: "Wootic", foto: "/rosario/assets/speakers/juan-sebastian-heredia-querro.jpg" },
+    { nombre: "Ana Elisa de Iparraguirre", org: "OwnIt", foto: "/rosario/assets/speakers/ana-elisa-de-iparraguirre.jpg" },
+    { nombre: "Gabriel Puertas", org: "Teramot", foto: "/rosario/assets/speakers/gabriel-puertas.jpg" },
+    { nombre: "Guillermo Seifert", org: "CRIA", foto: "/rosario/assets/speakers/guillermo-seifert.jpg" },
+    { nombre: "Roda Azziani", org: "Renaiss", foto: "/rosario/assets/speakers/roda-azziani.jpg" },
+    { nombre: "Ariana Onega", org: "Certenza", foto: "/rosario/assets/speakers/ariana-onega.jpg" },
+    { nombre: "Eduardo Amar", org: "UTN Rosario", foto: "/rosario/assets/speakers/eduardo-amar.jpg" },
+    { nombre: "Marcelo Lewandowski", org: "Senador Nacional", foto: "/rosario/assets/speakers/marcelo-lewandowski.jpg" },
+    { nombre: "Joel Ponce de León", org: "Colegio de Abogados", foto: "/rosario/assets/speakers/joel-ponce-de-leon.jpg" },
+    { nombre: "Romina Casadevall", org: "GRIDX", foto: "/rosario/assets/speakers/romina-casadevall.jpg" },
+    { nombre: "Alejandra Moreno", org: "Tecnoteca Rosario", foto: "/rosario/assets/speakers/alejandra-moreno.jpg" },
+    { nombre: "Dario Krapf", org: "Fecundis", foto: "/rosario/assets/speakers/dario-krapf.jpg" },
+    { nombre: "Martín Sabatini", org: "Michroma", foto: "/rosario/assets/speakers/martin-sabatini.jpg" }
   ];
   (function () {
     var ul = document.getElementById('grilla-speakers');
@@ -580,6 +591,16 @@
       }
       ul.appendChild(li);
     });
+  })();
+  (function () {
+    // CTA fijo: oculto mientras la portada está en pantalla (solo tiene efecto en mobile, ver CSS)
+    var cta = document.querySelector('.cta-fija');
+    var hero = document.getElementById('inicio');
+    if (!cta || !hero || !('IntersectionObserver' in window)) return;
+    cta.classList.add('cta-oculta');
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { cta.classList.toggle('cta-oculta', e.isIntersecting); });
+    }, { threshold: 0.15 }).observe(hero);
   })();
   (function () {
     // Aparición al scrollear
