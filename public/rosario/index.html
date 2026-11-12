@@ -81,6 +81,9 @@
   .btn--tinta { background: var(--tinta); color: var(--crema); }
   .btn--tinta::before { background: var(--lavanda); }
   .btn--tinta:hover, .btn--tinta:focus-visible { color: var(--tinta); }
+  /* El botón fijo abre el checkout de Luma; estas reglas le ganan a la hoja de estilos que inyecta el script de Luma */
+  a.btn.cta-fija.luma-checkout--button { font-family: var(--font); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; line-height: normal; border-radius: 0; border: 1.5px solid var(--tinta); background: var(--tinta); color: var(--crema); box-shadow: none; height: auto; }
+  a.btn.cta-fija.luma-checkout--button:hover, a.btn.cta-fija.luma-checkout--button:focus-visible { color: var(--tinta); background: var(--tinta); box-shadow: 3px 3px 0 var(--tinta); }
   .btn--linea { background: transparent; color: var(--tinta); }
   .btn--linea::before { background: var(--lavanda); }
   .btn--lila { background: var(--lavanda); color: var(--tinta); border-color: var(--lavanda); }
@@ -260,6 +263,8 @@
   .speaker__card span { font-size: 0.9rem; font-weight: 400; }
   .speaker:hover .speaker__card, .speaker:focus-within .speaker__card { opacity: 1; }
   .speaker--vacio { display: grid; place-items: center; color: var(--tinta); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-align: center; padding: 12px; }
+  /* Último casillero: un "+" que indica que faltan speakers por anunciar */
+  .speaker--mas { display: grid; place-items: center; color: var(--tinta); font-family: 'Helvetica Neue', 'InterTight', Helvetica, Arial, sans-serif; font-weight: 300; font-size: clamp(4rem, 9vw, 8rem); line-height: 1; }
   @media (max-width: 1100px) { .grilla-speakers { grid-template-columns: repeat(4, 1fr); } }
   @media (max-width: 860px) { .grilla-speakers { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 560px) { .grilla-speakers { grid-template-columns: repeat(2, 1fr); } }
@@ -364,7 +369,8 @@
 </style>
 </head>
 <body>
-<a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta cta-fija">Reservá tu lugar</a>
+<a href="https://luma.com/event/evt-rXPZ5w1l1YHSCcg" class="btn btn--tinta cta-fija luma-checkout--button" data-luma-action="checkout" data-luma-event-id="evt-rXPZ5w1l1YHSCcg">Reservá tu lugar</a>
+<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js" async></script>
 
 <section class="hero trama" id="inicio">
   <span class="q esq" aria-hidden="true"></span>
@@ -379,7 +385,7 @@
       <p class="hero__lead">Dos días que reúnen a quienes construyen tecnología y a las empresas e instituciones de Rosario: una conferencia el viernes y un hackathon el sábado.</p>
       <div class="hero__ctas">
         <a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta">Reservá tu lugar en la conferencia</a>
-        <a href="#hackathon" class="btn btn--linea">Sumate al hackathon</a>
+        <a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--linea">Sumate al hackathon</a>
       </div>
     </div>
   </div>
@@ -390,7 +396,7 @@
     <div class="revela">
       <h2 class="titulo">La red de <b>Crecimiento en todo el país</b></h2>
       <div class="agro__desc">
-        <p>Durante dos años construimos desde Buenos Aires una red de devs, startups, empresas e instituciones comprometidas con convertir a Argentina en el mejor lugar para construir. El próximo paso es que esa red crezca y se nutra en todo el país.</p>
+        <p>Durante dos años construimos desde Buenos Aires una red de desarrolladores, startups, empresas e instituciones comprometidas con convertir a Argentina en el mejor lugar para construir. El próximo paso es que esa red crezca y se nutra en todo el país.</p>
         <p>Rosario reúne al principal polo agroindustrial del país, un cordón industrial histórico y universidades de primer nivel. Sobre esa economía, una nueva capa se encuentra en crecimiento: empresas referentes en agtech, biotech, IA y fintech, dos mercados de capitales que ya trabajan en la tokenización y una comunidad de desarrolladores en expansión. Aleph Rosario pone en la misma sala a quienes construyen esa tecnología y a quienes mueven una de las economías más potentes del país.</p>
       </div>
     </div>
@@ -399,7 +405,6 @@
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/regday-cover.jpg" alt="Escenario de Regulation Day" loading="lazy"></figure>
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/aleph-2.jpg" alt="Charla en el escenario de Aleph" loading="lazy"></figure>
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/aleph24-6.jpg" alt="Público en el primer Aleph" loading="lazy"></figure>
-      <figure class="carrusel__item"><img src="/rosario/assets/eventos/ldac-2.jpg" alt="Escenario de la LATAM Digital Assets Conf" loading="lazy"></figure>
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/hack-3.jpg" alt="Equipos trabajando en el Aleph Hackathon" loading="lazy"></figure>
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/regday-3.jpg" alt="Panel de Regulation Day" loading="lazy"></figure>
       <figure class="carrusel__item"><img src="/rosario/assets/eventos/ciudad-7.jpg" alt="Foto grupal del primer Aleph" loading="lazy"></figure>
@@ -484,7 +489,7 @@
     <img src="/rosario/assets/img/crecimiento-white.svg" alt="Crecimiento" class="global__logo" width="2146" height="258">
     <h2 class="global__titulo">Crecimiento es una fundación que impulsa al ecosistema tech argentino para posicionar al país como <b>hub global de innovación.</b></h2>
     <div class="global__texto">
-      <p>Trabaja un sistema de programas que acompaña a startups y founders desde el hackathon hasta la aceleración, conectándolos con inversores y partners internacionales; y la articulación entre sector público y privado para un marco regulatorio a la altura del ritmo del ecosistema.</p>
+      <p>Para ello, ofrece un sistema de programas que acompaña a startups y emprendedores desde la idea hasta su aceleración y los conecta con inversores y partners internacionales. Además, articula al sector público con el privado para construir un marco regulatorio a la altura del ritmo del ecosistema.</p>
       <p>En dos años corrió más de 200 programas con más de 100 partners. Por su ecosistema circularon más de 15 mil personas y 1.000 startups, 200 aceleradas.</p>
     </div>
     <div class="global__stats">
@@ -591,6 +596,8 @@
       }
       ul.appendChild(li);
     });
+    var mas = document.createElement('li'); mas.className = 'speaker speaker--mas'; mas.setAttribute('aria-label', 'Más speakers por anunciar'); mas.textContent = '+';
+    ul.appendChild(mas);
   })();
   (function () {
     // CTA fijo: oculto mientras la portada está en pantalla (solo tiene efecto en mobile, ver CSS)
