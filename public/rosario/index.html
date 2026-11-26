@@ -217,22 +217,18 @@
   .agenda__row--marco .agenda__k { font-weight: 400; }
   .agenda__c { min-width: 0; }
   .agenda__q { font-size: 1.02rem; color: var(--gris); padding-top: 0.12em; }
-  /* Caras: el nombre va siempre visible; quien modera lleva aro lila y la etiqueta "Modera" */
-  .caras { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, 96px); gap: 16px 14px; }
+  /* Caras: debajo de cada foto van siempre el nombre y la organización; quien modera lleva aro lila y la etiqueta "Modera" */
+  .caras { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, 128px); gap: 20px 12px; }
   .agenda__q + .caras { margin-top: 16px; }
-  .cara { display: flex; flex-direction: column; align-items: center; gap: 7px; width: 100%; padding: 0; border: 0; background: none; font: inherit; color: var(--tinta); text-align: center; cursor: pointer; -webkit-tap-highlight-color: transparent; }
-  .cara:focus-visible { outline: none; }
-  .cara__foto { display: grid; place-items: center; width: 100%; max-width: 80px; aspect-ratio: 1; border-radius: 50%; border: 1.5px solid var(--tinta); background: var(--lavanda); overflow: hidden; font-weight: 700; font-size: 1.15rem; letter-spacing: 0.04em; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+  .cara { display: flex; flex-direction: column; align-items: center; gap: 3px; min-width: 0; color: var(--tinta); text-align: center; }
+  .cara__foto { display: grid; place-items: center; width: 100%; max-width: 80px; aspect-ratio: 1; margin-bottom: 6px; border-radius: 50%; border: 1.5px solid var(--tinta); background: var(--lavanda); overflow: hidden; font-weight: 700; font-size: 1.15rem; letter-spacing: 0.04em; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
   .cara__foto img { width: 100%; height: 100%; object-fit: cover; }
   .cara__foto--ini { background: var(--crema); }
-  .cara__nombre { font-size: 0.78rem; font-weight: 500; line-height: 1.2; max-width: 100%; overflow-wrap: break-word; }
-  .cara__rol { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1; background: var(--lavanda); padding: 4px 7px 3px; }
+  .cara__nombre { font-size: 0.82rem; font-weight: 600; line-height: 1.2; max-width: 100%; overflow-wrap: break-word; }
+  .cara__org { font-size: 0.76rem; line-height: 1.25; color: var(--gris); max-width: 100%; overflow-wrap: break-word; }
+  .cara__rol { margin-top: 4px; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; line-height: 1; background: var(--lavanda); padding: 4px 7px 3px; }
   .cara--modera .cara__foto { border: 4px solid var(--lavanda); outline: 1.5px solid var(--tinta); }
-  .cara[aria-pressed="true"] .cara__foto, .cara:focus-visible .cara__foto { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--tinta); }
-  .cara[aria-pressed="true"] .cara__nombre { font-weight: 700; }
-  /* Línea fija debajo de las caras: organizaciones del panel o, con alguien seleccionado, su nombre y organización */
-  .caras__linea { margin-top: 14px; min-height: 1.5em; font-size: 0.92rem; line-height: 1.5; color: var(--gris); }
-  .caras__linea b { font-weight: 700; color: var(--tinta); }
+  /* Al pasar el cursor se marca el bloque y la cara */
   @media (hover: hover) {
     .agenda__row:hover { background: var(--lavanda-suave); }
     .cara:hover .cara__foto { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--tinta); }
@@ -357,7 +353,7 @@
     .agenda__row:hover { background: none; }
     .agenda__q { padding-top: 2px; }
     .agenda__k + .agenda__c > .caras:first-child { margin-top: 10px; }
-    .caras__linea { min-height: 3em; }
+    .agenda__q + .caras { margin-top: 14px; }
     .pasos { grid-template-columns: 1fr; }
     .paso { min-height: 0; }
     .paso + .paso { border-left: 0; border-top: 1.5px solid var(--tinta); }
@@ -369,8 +365,10 @@
   }
   @media (max-width: 560px) {
     .btn--grande { padding: 18px 30px; }
-    .caras { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 8px; }
-    .cara__nombre { font-size: 0.72rem; }
+    .caras { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 8px; }
+    .caras--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 6px; }
+    .cara__nombre { font-size: 0.76rem; }
+    .cara__org { font-size: 0.7rem; }
     .global__stats { grid-template-columns: 1fr; }
     .global__stats p + p { padding-left: 0; border-left: 0; }
     .datos__inner { gap: 8px 24px; font-size: 0.74rem; }
@@ -434,15 +432,15 @@
       <span class="q q--bl" aria-hidden="true"></span>
       <p class="dia__fecha"><span>Viernes · Noviembre</span>27</p>
       <h3>Conferencia</h3>
-      <p>Quienes construyen tecnología y quienes conducen la industria, en el mismo escenario. Seis paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial y universidades. Además, un bloque con la Provincia y una conversación sobre inteligencia artificial, Estado y regulación.</p>
-      <div class="dia__tags"><span>6 paneles</span></div>
+      <p>Quienes construyen tecnología y quienes conducen la industria, en el mismo escenario. Siete paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial, educación y regulación.</p>
+      <div class="dia__tags"><span>7 paneles</span></div>
       <a href="https://luma.com/aleph-rosario" target="_blank" rel="noopener" class="btn btn--tinta dia__btn">Reservá tu lugar en la conferencia</a>
     </article>
     <article class="dia dia--lila">
       <span class="q q--bl q--crema" aria-hidden="true"></span>
       <p class="dia__fecha"><span>Sábado · Noviembre</span>28</p>
       <h3>Hackathon</h3>
-      <p>Tecnología aplicada al agro. Un día para construir sobre desafíos reales planteados por empresas de la región, con mentores técnicos y presentación final ante el jurado.</p>
+      <p>Tecnología aplicada al agro. Un día para construir sobre desafíos reales de la región, con mentores técnicos y presentación final ante el jurado.</p>
       <div class="dia__tags"><span>Presencial &amp; híbrido</span><span>+150 hackers</span></div>
       <a href="https://alephhackathon.crecimiento.build/rosario" target="_blank" rel="noopener" class="btn btn--tinta dia__btn">Inscribite al hackathon</a>
     </article>
@@ -472,13 +470,12 @@
       <h3 class="agenda__k">Agtech</h3>
       <div class="agenda__c">
         <p class="agenda__q">¿Qué necesita el agro de quienes construyen tecnología?</p>
-        <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Iván Regali" data-org="DeepAgro" aria-label="Iván Regali, DeepAgro" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/ivan-regali.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Iván Regali</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Lucas Lieber" data-org="Bioheuris" aria-label="Lucas Lieber, Bioheuris" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/lucas-lieber.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Lucas Lieber</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Fernán Gizzi" data-org="Agrosintex" aria-label="Fernán Gizzi, Agrosintex" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/fernan-gizzi.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Fernán Gizzi</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Lara Svendsen" data-org="Bolsa de Comercio de Rosario" aria-label="Lara Svendsen, Bolsa de Comercio de Rosario, modera" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/lara-svendsen-3.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Lara Svendsen</span><span class="cara__rol">Modera</span></button></li>
+        <ul class="caras caras--4" aria-label="Quiénes participan">
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/ivan-regali.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Iván Regali</span><span class="cara__org">DeepAgro</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/lucas-lieber.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Lucas Lieber</span><span class="cara__org">Bioheuris</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/fernan-gizzi.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Fernán Gizzi</span><span class="cara__org">Agrosintex</span></li>
+          <li class="cara cara--modera"><span class="cara__foto"><img src="/rosario/assets/speakers/lara-svendsen-3.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Lara Svendsen</span><span class="cara__org">Bolsa de Comercio de Rosario</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">DeepAgro · Bioheuris · Agrosintex · Bolsa de Comercio de Rosario</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -487,11 +484,10 @@
       <div class="agenda__c">
         <p class="agenda__q">Ciencia rosarina que se exporta.</p>
         <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Darío Krapf" data-org="Fecundis" aria-label="Darío Krapf, Fecundis" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/dario-krapf.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Darío Krapf</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Martín Sabatini" data-org="Michroma" aria-label="Martín Sabatini, Michroma" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/martin-sabatini.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Martín Sabatini</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Romina Casadevall" data-org="Gridx" aria-label="Romina Casadevall, Gridx, modera" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/romina-casadevall.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Romina Casadevall</span><span class="cara__rol">Modera</span></button></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/dario-krapf.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Darío Krapf</span><span class="cara__org">Fecundis</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/martin-sabatini.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Martín Sabatini</span><span class="cara__org">Michroma</span></li>
+          <li class="cara cara--modera"><span class="cara__foto"><img src="/rosario/assets/speakers/romina-casadevall.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Romina Casadevall</span><span class="cara__org">Gridx</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">Fecundis · Michroma · Gridx</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -500,11 +496,10 @@
       <div class="agenda__c">
         <p class="agenda__q">La infraestructura financiera que se construye desde Rosario.</p>
         <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Santos Barrio" data-org="LB Finanzas" aria-label="Santos Barrio, LB Finanzas" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">SB</span><span class="cara__nombre">Santos Barrio</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Fernando Luciani" data-org="Mercado Argentino de Valores" aria-label="Fernando Luciani, Mercado Argentino de Valores" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">FL</span><span class="cara__nombre">Fernando Luciani</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Santino Miele" data-org="Crecimiento" aria-label="Santino Miele, Crecimiento, modera" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">SM</span><span class="cara__nombre">Santino Miele</span><span class="cara__rol">Modera</span></button></li>
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">SB</span><span class="cara__nombre">Santos Barrio</span><span class="cara__org">LB Finanzas</span></li>
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">FL</span><span class="cara__nombre">Fernando Luciani</span><span class="cara__org">Mercado Argentino de Valores</span></li>
+          <li class="cara cara--modera"><span class="cara__foto cara__foto--ini" aria-hidden="true">SM</span><span class="cara__nombre">Santino Miele</span><span class="cara__org">Crecimiento</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">LB Finanzas · Mercado Argentino de Valores · Crecimiento</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -513,11 +508,10 @@
       <div class="agenda__c">
         <p class="agenda__q">Tokenización, de la prueba piloto a la escala.</p>
         <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Julia Irigoitia" data-org="Poliedro" aria-label="Julia Irigoitia, Poliedro" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/julia-irigoitia.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Julia Irigoitia</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Juan Sebastián Heredia Querro" data-org="Wootic" aria-label="Juan Sebastián Heredia Querro, Wootic" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/juan-sebastian-heredia-querro.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Juan Sebastián Heredia Querro</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Ana Elisa de Iparraguirre" data-org="Own It" aria-label="Ana Elisa de Iparraguirre, Own It, modera" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/ana-elisa-de-iparraguirre.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Ana Elisa de Iparraguirre</span><span class="cara__rol">Modera</span></button></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/julia-irigoitia.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Julia Irigoitia</span><span class="cara__org">Poliedro</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/juan-sebastian-heredia-querro.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Juan Sebastián Heredia Querro</span><span class="cara__org">Wootic</span></li>
+          <li class="cara cara--modera"><span class="cara__foto"><img src="/rosario/assets/speakers/ana-elisa-de-iparraguirre.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Ana Elisa de Iparraguirre</span><span class="cara__org">Own It</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">Poliedro · Wootic · Own It</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -525,11 +519,10 @@
       <h3 class="agenda__k">La Provincia y el futuro emprendedor</h3>
       <div class="agenda__c">
         <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Ernesto Turcato" data-org="Subsecretaría de Conocimiento para el Desarrollo" aria-label="Ernesto Turcato, Subsecretaría de Conocimiento para el Desarrollo" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">ET</span><span class="cara__nombre">Ernesto Turcato</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Bárbara Bercovich" data-org="Secretaría de Ciencia, Tecnología e Innovación" aria-label="Bárbara Bercovich, Secretaría de Ciencia, Tecnología e Innovación" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">BB</span><span class="cara__nombre">Bárbara Bercovich</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Francisco Méndez" data-org="Crecimiento" aria-label="Francisco Méndez, Crecimiento, modera" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">FM</span><span class="cara__nombre">Francisco Méndez</span><span class="cara__rol">Modera</span></button></li>
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">ET</span><span class="cara__nombre">Ernesto Turcato</span><span class="cara__org">Subsecretaría de Conocimiento para el Desarrollo</span></li>
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">BB</span><span class="cara__nombre">Bárbara Bercovich</span><span class="cara__org">Secretaría de Ciencia, Tecnología e Innovación</span></li>
+          <li class="cara cara--modera"><span class="cara__foto cara__foto--ini" aria-hidden="true">FM</span><span class="cara__nombre">Francisco Méndez</span><span class="cara__org">Crecimiento</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">Subsecretaría de Conocimiento para el Desarrollo · Secretaría de Ciencia, Tecnología e Innovación · Crecimiento</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -537,13 +530,12 @@
       <h3 class="agenda__k">IA y startups</h3>
       <div class="agenda__c">
         <p class="agenda__q">Emprender en IA.</p>
-        <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Gabriel Puertas" data-org="Teramot" aria-label="Gabriel Puertas, Teramot" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/gabriel-puertas.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Gabriel Puertas</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Guillermo Seifert" data-org="CRIA" aria-label="Guillermo Seifert, CRIA" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/guillermo-seifert.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Guillermo Seifert</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Roda Azziani" data-org="Renaiss" aria-label="Roda Azziani, Renaiss" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/roda-azziani.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Roda Azziani</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Luisina Gala" data-org="El Hub" aria-label="Luisina Gala, El Hub, modera" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/luisina-golosetti.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Luisina Gala</span><span class="cara__rol">Modera</span></button></li>
+        <ul class="caras caras--4" aria-label="Quiénes participan">
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/gabriel-puertas.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Gabriel Puertas</span><span class="cara__org">Teramot</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/guillermo-seifert.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Guillermo Seifert</span><span class="cara__org">CRIA</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/roda-azziani.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Roda Azziani</span><span class="cara__org">Renaiss</span></li>
+          <li class="cara cara--modera"><span class="cara__foto"><img src="/rosario/assets/speakers/luisina-golosetti.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Luisina Gala</span><span class="cara__org">El Hub</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">Teramot · CRIA · Renaiss · El Hub</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -551,13 +543,12 @@
       <h3 class="agenda__k">Universidades</h3>
       <div class="agenda__c">
         <p class="agenda__q">¿Cómo formamos a los emprendedores que la ciudad necesita?</p>
-        <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="David Curras" data-org="UAI Rosario" aria-label="David Curras, UAI Rosario" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">DC</span><span class="cara__nombre">David Curras</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Emiliano Pavicich" data-org="UNR" aria-label="Emiliano Pavicich, UNR" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">EP</span><span class="cara__nombre">Emiliano Pavicich</span></button></li>
-          <li><button type="button" class="cara" data-nombre="Eduardo Amar" data-org="UTN Rosario" aria-label="Eduardo Amar, UTN Rosario" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/eduardo-amar.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Eduardo Amar</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Alejandra Moreno" data-org="Tecnoteca" aria-label="Alejandra Moreno, Tecnoteca, modera" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/alejandra-moreno.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Alejandra Moreno</span><span class="cara__rol">Modera</span></button></li>
+        <ul class="caras caras--4" aria-label="Quiénes participan">
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">DC</span><span class="cara__nombre">David Curras</span><span class="cara__org">UAI Rosario</span></li>
+          <li class="cara"><span class="cara__foto cara__foto--ini" aria-hidden="true">EP</span><span class="cara__nombre">Emiliano Pavicich</span><span class="cara__org">UNR</span></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/eduardo-amar.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Eduardo Amar</span><span class="cara__org">UTN Rosario</span></li>
+          <li class="cara cara--modera"><span class="cara__foto"><img src="/rosario/assets/speakers/alejandra-moreno.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Alejandra Moreno</span><span class="cara__org">Tecnoteca</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">UAI Rosario · UNR · UTN Rosario · Tecnoteca</p>
       </div>
     </article>
     <article class="agenda__row">
@@ -565,10 +556,9 @@
       <h3 class="agenda__k">Inteligencia artificial, Estado y regulación</h3>
       <div class="agenda__c">
         <ul class="caras" aria-label="Quiénes participan">
-          <li><button type="button" class="cara" data-nombre="Joel Ponce de León" data-org="Colegio de Abogados de Rosario" aria-label="Joel Ponce de León, Colegio de Abogados de Rosario" aria-pressed="false"><span class="cara__foto"><img src="/rosario/assets/speakers/joel-ponce-de-leon.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Joel Ponce de León</span></button></li>
-          <li><button type="button" class="cara cara--modera" data-nombre="Francisco Méndez" data-org="Crecimiento" aria-label="Francisco Méndez, Crecimiento, modera" aria-pressed="false"><span class="cara__foto cara__foto--ini" aria-hidden="true">FM</span><span class="cara__nombre">Francisco Méndez</span><span class="cara__rol">Modera</span></button></li>
+          <li class="cara"><span class="cara__foto"><img src="/rosario/assets/speakers/joel-ponce-de-leon.jpg" alt="" width="600" height="600" loading="lazy"></span><span class="cara__nombre">Joel Ponce de León</span><span class="cara__org">Colegio de Abogados de Rosario</span></li>
+          <li class="cara cara--modera"><span class="cara__foto cara__foto--ini" aria-hidden="true">FM</span><span class="cara__nombre">Francisco Méndez</span><span class="cara__org">Crecimiento</span><span class="cara__rol">Modera</span></li>
         </ul>
-        <p class="caras__linea" aria-live="polite">Colegio de Abogados de Rosario · Crecimiento</p>
       </div>
     </article>
     <article class="agenda__row agenda__row--marco">
@@ -625,7 +615,7 @@
   <div class="faqs__lista">
     <details class="faq">
       <summary>¿Qué es Aleph Rosario?</summary>
-      <p>Aleph Rosario es la primera edición de Aleph fuera de Buenos Aires. El viernes 27 y el sábado 28 de noviembre reúne en Rosario a quienes construyen tecnología con las empresas e instituciones que mueven una de las economías más potentes del país. El viernes, una conferencia de seis paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial y universidades, con un bloque dedicado a la Provincia y una conversación sobre inteligencia artificial, Estado y regulación. El sábado, un hackathon de tecnología aplicada al agro, con desafíos reales planteados por empresas de la región.</p>
+      <p>Aleph Rosario es la primera edición de Aleph fuera de Buenos Aires. El viernes 27 y el sábado 28 de noviembre reúne en Rosario a quienes construyen tecnología con las empresas e instituciones que mueven una de las economías más potentes del país. El viernes, una conferencia de siete paneles sobre agtech, biotech, fintech, tokenización, inteligencia artificial, educación y regulación. El sábado, un hackathon de tecnología aplicada al agro, con desafíos reales de la región.</p>
     </details>
     <details class="faq">
       <summary>¿Cómo me inscribo?</summary>
@@ -674,37 +664,6 @@
 </footer>
 
 <script>
-  (function () {
-    // Agenda: al pasar el cursor o tocar una cara, la línea fija de abajo muestra su nombre y organización.
-    // Sin nadie seleccionado, la línea vuelve a las organizaciones del panel.
-    var grupos = Array.prototype.slice.call(document.querySelectorAll('.caras'));
-    grupos.forEach(function (ul) {
-      var linea = ul.parentNode.querySelector('.caras__linea');
-      if (!linea) return;
-      var base = linea.textContent, fijada = null;
-      var caras = Array.prototype.slice.call(ul.querySelectorAll('.cara'));
-      function pinta(c) {
-        if (!c) { linea.textContent = base; return; }
-        linea.textContent = '';
-        var b = document.createElement('b'); b.textContent = c.getAttribute('data-nombre');
-        linea.appendChild(b);
-        linea.appendChild(document.createTextNode(' · ' + c.getAttribute('data-org')));
-      }
-      function fija(c) {
-        fijada = c;
-        caras.forEach(function (x) { x.setAttribute('aria-pressed', x === c ? 'true' : 'false'); });
-        pinta(c);
-      }
-      caras.forEach(function (c) {
-        c.addEventListener('mouseenter', function () { pinta(c); });
-        c.addEventListener('mouseleave', function () { pinta(fijada); });
-        c.addEventListener('focus', function () { pinta(c); });
-        c.addEventListener('blur', function () { pinta(fijada); });
-        c.addEventListener('click', function () { fija(fijada === c ? null : c); });
-      });
-      document.addEventListener('click', function (e) { if (fijada && !ul.contains(e.target)) fija(null); });
-    });
-  })();
   (function () {
     // CTA fijo: oculto mientras la portada está en pantalla (solo tiene efecto en mobile, ver CSS)
     var cta = document.querySelector('.cta-fija');
